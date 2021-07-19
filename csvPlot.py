@@ -30,8 +30,9 @@ args = p.parse_args()
 
 
 #---------------------------Generate file paths-------------------------
+#decide in which path to look for the files (default or user defined)
 if args.userpath is None:
-    filepath = "C:/Users/spino/Documents/UNIVERSITA/TesiLM/csvFiles/"
+    filepath = "C:/Users/spino/Documents/UNIVERSITA/TesiLM/csvFiles/" #if userpath is not specified then a default path is used 
 else:
     filepath = args.userpath
 
@@ -71,7 +72,8 @@ if args.userxval is not None:
     
 
 #---------------------Create the plot and show it-----------------------
-if args.userxval is None: #defining which data to plot
+#define which data to plot
+if args.userxval is None: 
     xdata = data["x"]
 else:
     xdata = userxdata["userx"] 
@@ -82,15 +84,16 @@ if args.filename2 is not None:
     xdata2 = data2["x2"]
     ydata2 = data2["y2"]
     
-    
-print("x data size: ", xdata.size) #printing x data size
-print("y data size: ", ydata.size) #printing y data size
+#print data sizes   
+print("x data size: ", xdata.size) #print x data size
+print("y data size: ", ydata.size) #print y data size
 
 if args.filename2 is not None:
-    print("y data 2 size: ", ydata2.size) #printing y data 2 size
+    print("y data 2 size: ", ydata2.size) #print y data 2 size, if present
 
 
-if args.start is not None:  #defining which points to plot
+#define which points to plot
+if args.start is not None:  
     start_index = args.start
 else:
     start_index = 1  
@@ -101,21 +104,25 @@ else:
     stop_index = xdata.size
 
 
-plt.plot(xdata[start_index:stop_index], ydata[start_index:stop_index], "b-") #plotting data
+#plot data by using a blue continuous line for the main plot and red continuous
+# line for the additional plot (if present)
+plt.plot(xdata[start_index:stop_index], ydata[start_index:stop_index], "b-")
 if args.filename2 is not None:
      plt.plot(xdata2[start_index:stop_index], ydata2[start_index:stop_index], "r-")   
-
-if args.x_label is None:
+     
+    
+#add labels
+if args.x_label is None: #decide which label to use for x axis (default or user defined)
     x_lab = "Vid [V]"
 else:
     x_lab = args.x_label
 
-if args.y_label is None:
+if args.y_label is None: #decide which label to use for y axis (default or user defined)
     y_lab = "Vod [V]"
 else:
     y_lab = args.y_label
     
-plt.xlabel(x_lab)
-plt.ylabel(y_lab)
-plt.show()
+plt.xlabel(x_lab) #add x label
+plt.ylabel(y_lab) #add y label
+plt.show() #show the plot
 #-----------------------------------------------------------------------
