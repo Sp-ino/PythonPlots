@@ -47,7 +47,7 @@ p.add_argument("-p",
 p.add_argument("-a", 
                "--start", 
                type = int, 
-               help = "starting index from which to plot.")
+               help = "starting index from which to plot")
 p.add_argument("-o", 
                "--stop", 
                type = int, 
@@ -70,6 +70,10 @@ p.add_argument("-plty",
                default = None,
                choices = ["line", "stem"],
                help = "This option allows to choose the type of plot")
+p.add_argument("-m",
+               "--multicol",
+               type = bool,
+               help = "This option allows to import all columns from the .csv file. The first one is interpreted as the x-axis, while the remaining are seen as y data.")
 
 args = p.parse_args() 
 #-----------------------------------------------------------------------
@@ -79,7 +83,7 @@ args = p.parse_args()
 #---------------------------Generate file paths-------------------------
 #decide in which path to look for the files (default or user defined)
 if args.userpath is None:
-    filepath = "C:/Users/spino/Documents/UNIVERSITA/TesiLM/csvFiles/" #if userpath is not specified then a default path is used 
+    filepath = "/home/spino/PhD/CSV/ADC_test/" #if userpath is not specified then a default path is used 
 else:
     filepath = args.userpath
 
@@ -98,12 +102,20 @@ if args.userxval is not None:
 
 
 #-------------------------Import the .csv files-------------------------
-try:
-    data = np.genfromtxt(file, delimiter = ",", names = ["x", "y"])
-except:
-    print("Could not import " + args.filename)
-    sys.exit(1)
+if args.multicol:
+    try:
+        data = np.genfromtxt(file, delimiter = ",") #if -m is true then data is imported as a numpy matrix
+    except:
+        print("Could not import " + args.filename)
+        sys.exit(1)    
+else:
+    try:
+        data = np.genfromtxt(file, delimiter = ",", names = ["x", "y"]) 
+    except:
+        print("Could not import " + args.filename)
+        sys.exit(1)
     
+
 if args.filename2 is not None:
     try:
         data2 = np.genfromtxt(file2, delimiter = ",", names = ["x2", "y2"])
@@ -129,21 +141,30 @@ if args.userxval is not None:
     
 
 #---------------------Define which data to plot-------------------------
-if args.userxval is None: 
-    rawxdata = data["x"]
-    xdata = rawxdata[1:rawxdata.size+1]*pow(10,9)
-else:
-    xdata = userxdata["userx"]
-       
-rawydata = data["y"]
-ydata = rawydata[1:rawydata.size]
+if args.multicol:
+    row_len = data[0,:].size    #compute number of coluns (length of a row)
+    col_len = data[:,0].size    #compute number of rows (length of a column)
+    xdata = data[1:col_len+1,0] #extract xdata
+    ydata = data[1:col_len+1,1:row_len+1]   #extract ydata (in general ydata is a matrix)
+    ydata = ydata.transpose()   #transpose ydata to simplify the access to the single
+                                #trace in this way traces can be iteratively plotted with
+                                #for trace in ydata:
+                                #   plot(trace)
+else:    
+    if args.userxval is None: 
+        rawxdata = data["x"]
+        xdata = rawxdata[1:rawxdata.size+1]
+    else:
+        xdata = userxdata["userx"]
+    rawydata = data["y"]
+    ydata = rawydata[1:rawydata.size]
 
 if args.filename2 is not None:
     rawxdata2 = data2["x2"]
     xdata2 = rawxdata2[1:rawxdata2.size+1]
 
     rawydata2 = data2["y2"]
-    ydata2 = rawydata2[1:rawydata2.size+1]*1
+    ydata2 = rawydata2[1:rawydata2.size+1]
     
 if args.filename3 is not None:
     rawxdata3 = data3["x3"]
@@ -177,42 +198,44 @@ else:
 
 
 #--------optional section for plotting the DTFT of the input------------
-if args.transf == True:
+if args.transf:
     Tsample = 0.000000018
-    N = 32
+    N = 32                                                          #N should be a power of 2
+    startdft = 1
     
-    totransform = ydata[2:N+2] - 1              #compute DFT
-    plt.plot(totransform, "-o")
-    transform = fttp.fft(totransform)
-    linydata = 2.0/N * np.abs(transform[:N//2])
-    
-    totsquared = 0                              #compute THD
-    for harm in linydata[2:linydata.size-1]:
-        totsquared = totsquared + pow(harm,2)   
-    thdlin = np.sqrt(totsquared)/linydata[1]
-    thd = 20*np.log10(thdlin)
-    print("THD =", thd)
+    if args.multicol:                                               #if -m is true, compute DFT and THD for each trace
+        index = 0
+        linydata = np.zeros((row_len-1, N//2))
+        for curve in ydata:
+            totransform = curve[startdft:N+startdft] - 1            #compute DFT
+            plt.plot(totransform, "-o")
+            transform = fttp.fft(totransform)
+            linydata[index,:] += 2.0/N * np.abs(transform[:N//2])
+            totsquared = 0                                          #compute THD
+            for harm in linydata[index,2:linydata[0,:].size]:
+                totsquared = totsquared + pow(harm,2)
+            thdlin = np.sqrt(totsquared)/linydata[index,1]
+            thd = 20*np.log10(thdlin)
+            print("THD =", thd)
+            index+=1
+    else:
+        totransform = ydata[startdft:N+startdft] - 1                #compute DFT
+        plt.plot(totransform, "-o")
+        transform = fttp.fft(totransform)
+        linydata = 2.0/N * np.abs(transform[:N//2])
+        
+        totsquared = 0                                              #compute THD
+        for harm in ydata[2:linydata.size-1]:
+            totsquared = totsquared + pow(harm,2)   
+        thdlin = np.sqrt(totsquared)/linydata[1]
+        thd = 20*np.log10(thdlin)
+        print("THD =", thd)
     
     ydata = 20*np.log10(linydata)               #compute DFT in dB
     
-    f = 1/(Tsample*32)
-    t = np.linspace(0.0, (N-1)*Tsample, N)
-    ydata2 = np.sin(2*np.pi*f*t)
-    transform = fttp.fft(ydata2[0:N])
-    ydata2 = 20*np.log10(2.0/N * np.abs(transform[:N//2]))
-    
-    xdata = np.linspace(0.0, 1.0/(Tsample*2*1000000), N//2+1)
+    xdata = np.linspace(0.0, 1.0/(Tsample*2*1000000), N//2+1) #compute x-axis for the DFT
     start_index = 0
     stop_index = N//2
-
-# Tsample = 0.000000018
-# N = 32
-# f = 1/(Tsample*32)
-# t = np.linspace(0.0, (N-1)*Tsample, N)
-# ydata = np.sin(2*np.pi*f*t)
-# xdata = t
-#start_index = 0
-#stop_index = int(N/2)
 #-----------------------------------------------------------------------
 
 
@@ -220,44 +243,50 @@ if args.transf == True:
 #plot data by using a blue continuous line for the main plot, red continuous
 # line for the additional plot (if present) and green continuous line for the third plot (if present)
 fig, ax = plt.subplots(figsize=(7.5, 4.5))
-# Tsample = 18
-# N = 32
-# xdata = np.linspace(0.0, (N)*Tsample+20, N+1)
-if args.plottype is None or args.plottype == "line":
-    if args.diff == False or args.diff is None: #plot ydata
-        ax.plot(xdata[start_index:stop_index], ydata[start_index:stop_index],"--",
-                label = "$V_P$")
-    if (args.filename2 is None) and (args.diff == True): #return error message
-        print("Error. 2 arguments must be specified to use the -d option")
-        sys.exit(2)
-    if (args.filename2 is not None) and (args.diff == True): #plot the difference between ydata and ydata2
-        ydiff = ydata/ydata2
-        ax.plot(xdata[start_index:stop_index], ydiff[start_index:stop_index], 
-                label = "1 ciclo")
-    if (args.filename2 is not None) and (args.diff == False or args.diff is None): #plot also ydata2
-        ax.plot(xdata[start_index:stop_index], ydata2[start_index:stop_index],
-                "r-.", label = "$V_Q$")
-    if args.filename3 is not None: #plot also ydata3
-       ax.plot(xdata[start_index:stop_index], ydata3[start_index:stop_index], 
-               "g-", label = "clock")
+
+if args.plottype is None or args.plottype == "line":                #plot by using continuous line
+    if args.multicol:
+        for curve in ydata:
+            ax.plot(xdata[start_index:stop_index], curve[start_index:stop_index]) #if -m arg is true, plot all traces iteratively
+    else:
+        if args.diff == False or args.diff is None: #plot ydata
+            ax.plot(xdata[start_index:stop_index], ydata[start_index:stop_index],"--",
+                    label = "$V_P$")
+        if (args.filename2 is None) and (args.diff == True): #return error message
+            print("Error. 2 arguments must be specified to use the -d option")
+            sys.exit(2)
+        if (args.filename2 is not None) and (args.diff == True): #plot the difference between ydata and ydata2
+            ydiff = ydata/ydata2
+            ax.plot(xdata[start_index:stop_index], ydiff[start_index:stop_index], 
+                    label = "1 ciclo")
+        if (args.filename2 is not None) and (args.diff == False or args.diff is None): #plot also ydata2
+            ax.plot(xdata[start_index:stop_index], ydata2[start_index:stop_index],
+                    "r-.", label = "$V_Q$")
+        if args.filename3 is not None: #plot also ydata3
+           ax.plot(xdata[start_index:stop_index], ydata3[start_index:stop_index], 
+                   "g-", label = "clock")
        
-elif args.plottype == "stem":
-    bottomval = -95
-    if args.diff == False or args.diff is None: #plot ydata
-        ax.stem(xdata[start_index:stop_index], ydata[start_index:stop_index], label = "ADC", bottom = bottomval)
-    if (args.filename2 is None) and (args.diff == True): #return error message
-        print("Error. 2 arguments must be specified to use the -d option")
-        sys.exit(2)
-    if (args.filename2 is not None) and (args.diff == True): #plot the difference between ydata and ydata2
-        ydiff = ydata - ydata2
-        ax.plot(xdata2[start_index:stop_index], ydiff[start_index:stop_index], bottom = bottomval)
-    if (args.filename2 is not None) and (args.diff == False or args.diff is None): #plot also ydata2
-        markerline, stemlines, baseline = ax.stem(xdata[start_index:stop_index], ydata2[start_index:stop_index],
-                                                  markerfmt = "C3o", label = "Ideale", bottom = bottomval)
-        plt.setp(stemlines, 'color', plt.getp(markerline,'color'))
-        plt.setp(stemlines, 'linestyle', 'dotted')
-    if args.filename3 is not None: #plot also ydata3
-       markerline, stemlines, baseline = ax.stem(xdata[start_index:stop_index], ydata3[start_index:stop_index],
+elif args.plottype == "stem":                                       #produce a stem plot
+    bottomval = -95                                                 #decide which is the bottomline position
+    if args.multicol:
+        for curve in ydata:
+            ax.stem(xdata[start_index:stop_index], curve[start_index:stop_index], bottom = bottomval) #if -m arg is true, plot all traces iteratively
+    else:
+        if args.diff == False or args.diff is None: #plot ydata
+            ax.stem(xdata[start_index:stop_index], ydata[start_index:stop_index], label = "ADC", bottom = bottomval)
+        if (args.filename2 is None) and (args.diff == True): #return error message
+            print("Error. 2 arguments must be specified to use the -d option")
+            sys.exit(2)
+        if (args.filename2 is not None) and (args.diff == True): #plot the difference between ydata and ydata2
+            ydiff = ydata - ydata2
+            ax.plot(xdata2[start_index:stop_index], ydiff[start_index:stop_index], bottom = bottomval)
+        if (args.filename2 is not None) and (args.diff == False or args.diff is None): #plot also ydata2
+            markerline, stemlines, baseline = ax.stem(xdata[start_index:stop_index], ydata2[start_index:stop_index],
+                                                      markerfmt = "C3o", label = "Ideale", bottom = bottomval)
+            plt.setp(stemlines, 'color', plt.getp(markerline,'color'))
+            plt.setp(stemlines, 'linestyle', 'dotted')
+        if args.filename3 is not None: #plot also ydata3
+           markerline, stemlines, baseline = ax.stem(xdata[start_index:stop_index], ydata3[start_index:stop_index],
                                                  markerfmt = "C4o", label = "Errore di kickback", bottom = bottomval)  
 
 #add legend if necessary
@@ -266,7 +295,7 @@ if (args.filename2 is not None and (args.diff is None or args.diff == False)) or
 
 #add labels to axes
 if args.x_label is None: #decide which label to use for x axis (default or user defined)
-    x_lab = "$T_{ck}$ [ns]" #"$f$ [MHz]" 
+    x_lab = "$T_{ck}$ [s]" #"$f$ [MHz]" 
 else:
     x_lab = args.x_label
 
@@ -282,8 +311,11 @@ ax.set_ylabel(y_lab) #add y label
 fig.tight_layout()
 
 #save and show the result
-savepath = "C:/Users/spino/Documents/UNIVERSITA/TesiLM/Manoscritti/tesi/figures/"
+savepath = "/home/spino/PhD/figures/ADC_test"
 figname = "a.png"
 figurepath = savepath + figname
-fig.savefig(figurepath, dpi = 600)
+try:
+    fig.savefig(figurepath, dpi = 600)
+except:
+    print("Couldn't save figure to specified path. Check savepath and make sure it exists.")
 #-----------------------------------------------------------------------
