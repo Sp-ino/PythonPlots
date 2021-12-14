@@ -1,0 +1,1210 @@
+1639432464608	geckodriver	INFO	Listening on 127.0.0.1:54253
+1639432464615	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44705" "-no-remote" "-profile" "/tmp/rust_mozprofilenI3IcY"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639432464969	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenI3IcY/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:44705/devtools/browser/8d5a9824-7c6a-4a04-b1c8-1787c1aa2349
+1639432466073	Marionette	INFO	Listening on port 44853
+1639432466130	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639432486541	Marionette	INFO	Stopped listening on port 44853
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 35337, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639432488851	geckodriver	INFO	Listening on 127.0.0.1:37119
+1639432488861	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55617" "-no-remote" "-profile" "/tmp/rust_mozprofilexNP3MT"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639432489215	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexNP3MT/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55617/devtools/browser/1eb8fb15-aca0-4e95-a411-a5c43535bd67
+1639432490147	Marionette	INFO	Listening on port 34541
+1639432490176	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639432493532	Marionette	INFO	Stopped listening on port 34541
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639432804944	geckodriver	INFO	Listening on 127.0.0.1:33435
+1639432804959	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59145" "-no-remote" "-profile" "/tmp/rust_mozprofilelZPDJP"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639432805318	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelZPDJP/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59145/devtools/browser/3f48e308-acdc-4760-aed0-514d158587d9
+1639432806233	Marionette	INFO	Listening on port 33877
+1639432806283	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 118 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbsBBY8IInw06EecKQCrNkY3b3gFVOpmhKCoPBjr8KPPHrS5ruvumJcJNywj_S-2XzUTLGKcm_l-O1PACWQ5uRvvjsQYyfbuGimEZes-E5PMTKUPxcIkPtClobfsiZOKpslX3Dqd&PersistentCookie=1&service=wise line 1 > eval line 3133 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639432866137	geckodriver	INFO	Listening on 127.0.0.1:40063
+1639432866152	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39473" "-no-remote" "-profile" "/tmp/rust_mozprofileoiwbNZ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639432866513	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileoiwbNZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39473/devtools/browser/095dfc07-12bd-4df8-b201-275fb6ecdcda
+1639432867525	Marionette	INFO	Listening on port 45131
+1639432867565	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 378 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639432870813	Marionette	INFO	Stopped listening on port 45131
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639432889171	geckodriver	INFO	Listening on 127.0.0.1:47617
+1639432889183	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46027" "-no-remote" "-profile" "/tmp/rust_mozprofileuwmRdd"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639432889535	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileuwmRdd/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46027/devtools/browser/279cfb27-4c57-4643-b172-822d24f9e5fb
+1639432890430	Marionette	INFO	Listening on port 45067
+1639432890495	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 5132 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://accounts.google.com"
+1639432923405	Marionette	INFO	Stopped listening on port 33877
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639433218829	geckodriver	INFO	Listening on 127.0.0.1:50521
+1639433218840	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54491" "-no-remote" "-profile" "/tmp/rust_mozprofileu99AVA"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639433219184	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileu99AVA/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54491/devtools/browser/cec78aba-7322-48b2-a20c-6cff5ebd307d
+1639433220070	Marionette	INFO	Listening on port 44725
+1639433220153	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 2216 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639433276519	geckodriver	INFO	Listening on 127.0.0.1:59867
+1639433276529	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41883" "-no-remote" "-profile" "/tmp/rust_mozprofile3hgACz"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639433276879	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3hgACz/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41883/devtools/browser/ebf4934d-d7a1-4c0a-a2e8-a061c05abc45
+1639433277961	Marionette	INFO	Listening on port 43495
+1639433278044	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1639433282385	Marionette	INFO	Stopped listening on port 45067
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1639433282436	addons.xpi	ERROR	Failed to download system add-on webcompat@mozilla.org: Error: Failed downloading via XHR, status: 0, reason: error(resource://gre/modules/addons/ProductAddonChecker.jsm:419:16) JS Stack trace: fail@ProductAddonChecker.jsm:419:16
+1639433282436	addons.xpi	ERROR	Failed to download system add-on reset-search-defaults@mozilla.com: Error: Failed downloading via XHR, status: 0, reason: error(resource://gre/modules/addons/ProductAddonChecker.jsm:419:16) JS Stack trace: fail@ProductAddonChecker.jsm:419:16
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 79 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639433290043	Marionette	INFO	Stopped listening on port 44725
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.uniroma1.it"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.uniroma1.it"
+1639433564649	geckodriver	INFO	Listening on 127.0.0.1:53529
+1639433564659	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52499" "-no-remote" "-profile" "/tmp/rust_mozprofilesihkAy"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639433565014	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesihkAy/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52499/devtools/browser/afdaabf5-b4ce-46e8-9e89-0455ecf91da5
+1639433565919	Marionette	INFO	Listening on port 40163
+1639433565973	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 144 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1639433809022	Marionette	INFO	Stopped listening on port 40163
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 39863, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639433818374	Marionette	INFO	Stopped listening on port 43495
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639433848486	geckodriver	INFO	Listening on 127.0.0.1:40787
+1639433848497	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59637" "-no-remote" "-profile" "/tmp/rust_mozprofileaYg6em"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639433848851	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileaYg6em/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59637/devtools/browser/46d829ef-cf28-4740-a974-ac3c3881bea1
+1639433849781	Marionette	INFO	Listening on port 33759
+1639433849811	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 42 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639433954745	geckodriver	INFO	Listening on 127.0.0.1:59801
+1639433954753	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51789" "-no-remote" "-profile" "/tmp/rust_mozprofilekLbtwc"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639433955104	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilekLbtwc/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51789/devtools/browser/82a555a3-7130-4dd2-a523-2591eec1590e
+1639433956183	Marionette	INFO	Listening on port 32845
+1639433956284	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 2928 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639433985817	Marionette	INFO	Stopped listening on port 33759
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639433986987	Marionette	INFO	Stopped listening on port 32845
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639434077642	geckodriver	INFO	Listening on 127.0.0.1:53403
+1639434077652	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57549" "-no-remote" "-profile" "/tmp/rust_mozprofileyhVpgs"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639434078007	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyhVpgs/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57549/devtools/browser/8454a6c6-9489-49bc-8955-f6afca4330c1
+1639434079005	Marionette	INFO	Listening on port 36303
+1639434079065	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 6896 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.uniroma1.it"
+1639434261484	geckodriver	INFO	Listening on 127.0.0.1:58091
+1639434261685	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48489" "-no-remote" "-profile" "/tmp/rust_mozprofileEJc2ip"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639434262050	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileEJc2ip/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48489/devtools/browser/8b5c414a-a3f5-464e-b33d-11c49b0afde7
+1639434263004	Marionette	INFO	Listening on port 46113
+1639434263101	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 1032 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639434268678	Marionette	INFO	Stopped listening on port 46113
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639434328153	geckodriver	INFO	Listening on 127.0.0.1:41795
+1639434328168	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46413" "-no-remote" "-profile" "/tmp/rust_mozprofileb2waWm"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639434328547	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileb2waWm/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46413/devtools/browser/4d66c839-ae3c-4c30-b781-1765cee706cb
+1639434329578	Marionette	INFO	Listening on port 39301
+1639434329711	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 5615 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1639434562246	geckodriver	INFO	Listening on 127.0.0.1:46021
+1639434562257	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35167" "-no-remote" "-profile" "/tmp/rust_mozprofileOCP0AH"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639434562622	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileOCP0AH/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35167/devtools/browser/5d6b314f-c143-4fc4-bc46-efff8cb5c155
+1639434563558	Marionette	INFO	Listening on port 38747
+1639434563573	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 614 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1639434786286	Marionette	INFO	Stopped listening on port 39301
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639434788851	Marionette	INFO	Stopped listening on port 38747
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639434841403	geckodriver	INFO	Listening on 127.0.0.1:48555
+1639434841411	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58101" "-no-remote" "-profile" "/tmp/rust_mozprofilew1vbmG"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639434841783	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilew1vbmG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58101/devtools/browser/8dd9b2be-7a43-459b-879c-c926fe90652e
+1639434842720	Marionette	INFO	Listening on port 44179
+1639434842824	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 2729 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639434881070	geckodriver	INFO	Listening on 127.0.0.1:59593
+1639434881080	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50273" "-no-remote" "-profile" "/tmp/rust_mozprofileR502WD"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639434881443	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileR502WD/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50273/devtools/browser/739667f4-407d-48d5-a86f-ec6b8605235e
+1639434882358	Marionette	INFO	Listening on port 32843
+1639434882395	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1639434883709	Marionette	INFO	Stopped listening on port 32843
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1639434883830	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 575: uncaught exception: Object
+[2021-12-13T22:34:43Z ERROR glean] Can't persist ping lifetime data: Error { kind: Rkv(IoError(Os { code: 2, kind: NotFound, message: "No such file or directory" })) }
+1639434888080	geckodriver	INFO	Listening on 127.0.0.1:60599
+1639434888179	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45341" "-no-remote" "-profile" "/tmp/rust_mozprofiles8CCBc"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639434888654	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiles8CCBc/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45341/devtools/browser/336e2e38-c379-4a9b-bb58-95f657c6e7f5
+1639434889582	Marionette	INFO	Listening on port 44573
+1639434889597	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 3635 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639434896679	Marionette	INFO	Stopped listening on port 44573
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639434934662	geckodriver	INFO	Listening on 127.0.0.1:33485
+1639434934682	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41301" "-no-remote" "-profile" "/tmp/rust_mozprofilemPmNxK"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639434935087	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilemPmNxK/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41301/devtools/browser/647331a0-ee16-4cdb-98b1-93209fe9966b
+1639434935983	Marionette	INFO	Listening on port 42075
+1639434936002	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 5633 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639434943396	Marionette	INFO	Stopped listening on port 42075
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639434981206	geckodriver	INFO	Listening on 127.0.0.1:43967
+1639434981222	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45019" "-no-remote" "-profile" "/tmp/rust_mozprofile4tihpZ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639434981597	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile4tihpZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45019/devtools/browser/90d61534-11e6-428c-9401-911728106e30
+1639434982564	Marionette	INFO	Listening on port 35581
+1639434982637	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 2383 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639434995558	Marionette	INFO	Stopped listening on port 35581
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639434998026	Marionette	INFO	Stopped listening on port 44179
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639435033960	geckodriver	INFO	Listening on 127.0.0.1:43053
+1639435033966	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40169" "-no-remote" "-profile" "/tmp/rust_mozprofileB1ttau"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639435034328	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileB1ttau/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:40169/devtools/browser/50346f91-147f-46ef-836e-43f86665190a
+1639435035263	Marionette	INFO	Listening on port 34927
+1639435035282	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 4256 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbuvzyBUHTSAI9a5KrhW78LAAS47gsR_b2eZodli_4w1rbx4G7lVrSoowi52Y8HwrTiikptfkxWSb7nWJbtE-UPU8Db3o6k--0II-TISgzNQ5uEOxVqFwAShhVqGQdJmgBGi0j0Z&PersistentCookie=1&service=wise line 1 > eval line 512 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639435295004	geckodriver	INFO	Listening on 127.0.0.1:48773
+1639435295016	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "53267" "-no-remote" "-profile" "/tmp/rust_mozprofileGDoSe0"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639435295409	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileGDoSe0/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:53267/devtools/browser/29e6b80d-d327-40dc-abf2-1148c20cf79a
+1639435296308	Marionette	INFO	Listening on port 43485
+1639435296344	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 5743 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbs3_FMHJMNLcf9NflEjbG2G47SriKHzrlCmCbJZ0CVM-Ns6AUEX3nZC4mKj97daQslMBJE5AAeaKsAUWeThReJwuygbElyYYNnszgWnJ6yWYjLlTYYLkemMqiRoletiKiv_I-xc&PersistentCookie=1&service=wise line 1 > eval line 4797 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639435363347	Marionette	INFO	Stopped listening on port 36303
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 41954, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639435366683	Marionette	INFO	Stopped listening on port 34927
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639435369691	geckodriver	INFO	Listening on 127.0.0.1:51927
+1639435369764	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40813" "-no-remote" "-profile" "/tmp/rust_mozprofileR0CsqJ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639435370152	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileR0CsqJ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:40813/devtools/browser/e0cc79c6-9967-43b5-a7b5-1f9973993fcf
+1639435370983	Marionette	INFO	Listening on port 45799
+1639435371083	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 919 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbsZWXZYO-q4bDFaX21Y-A8NGdnhQaWaWXZ3cWV5LihEmI-kvsVnAQm4wfgU24Sgi5Pu4pA1AV0o5FBioWRTxB7UknCoVTFLHs7rAPy91_nDCggCac5__oxq-22_pbdBRdSb59w-&PersistentCookie=1&service=wise line 1 > eval line 820 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639435386257	Marionette	INFO	Stopped listening on port 45799
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1639435402198	geckodriver	INFO	Listening on 127.0.0.1:56327
+1639435402208	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54753" "-no-remote" "-profile" "/tmp/rust_mozprofileax6i2h"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639435402559	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileax6i2h/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54753/devtools/browser/c5500ecd-a175-474b-baca-99e4ef04f561
+1639435403676	Marionette	INFO	Listening on port 34851
+1639435403722	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 954 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbvYbsHULF61Dm0NYUhtueLOqWx_rB1XeuNeg33rOICFuDDx0ipEI6Y_X6jqGeWNrwghJWmNdAuIRfp-9VXgynweGNtFErOOPE41qAtcXsggshNr95-yA6Wr4wodbNWdGIBZf7o8&PersistentCookie=1&service=wise line 1 > eval line 5239 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639435435400	Marionette	INFO	Stopped listening on port 34851
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639435477975	geckodriver	INFO	Listening on 127.0.0.1:51909
+1639435477982	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40647" "-no-remote" "-profile" "/tmp/rust_mozprofile8SqVYC"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639435478345	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8SqVYC/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:40647/devtools/browser/27c2b727-314a-426e-8d86-90a88211e89e
+1639435479267	Marionette	INFO	Listening on port 36109
+1639435479297	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 435 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbtPsRlHRhoTv6dKkDC3ResSqT2QCypbgDS7LSbooArkzBS-nsV21Iro4i3OpYtlKcSJKnXSoPK_M-UDprmuPfynESxAsAS6D3KHPxLfV7ONu-NKrUpLiu2QD54ToHR1Tcrl7-st&PersistentCookie=1&service=wise line 1 > eval line 7753 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639435663914	geckodriver	INFO	Listening on 127.0.0.1:44347
+1639435664054	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42839" "-no-remote" "-profile" "/tmp/rust_mozprofileHR5A88"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639435664441	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileHR5A88/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:42839/devtools/browser/b8e89afb-6c3c-45c7-85ae-1617e958a174
+1639435665377	Marionette	INFO	Listening on port 45251
+1639435665499	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 478 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbsGDR9SWhO1LVFNNeQ9fpx6FcfLYC7J72oXLuJxzIo8sUEP8Bt9o0TvwNk4jAy2JIazlk6iWkm6-Oa2VHGaTK4oCORZvOr4z-NBIYAJaINPbkXcZOQ86lae7WPR8KfIJwYJNzsn&PersistentCookie=1&service=wise line 1 > eval line 405 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1639435729885	geckodriver	INFO	Listening on 127.0.0.1:60791
+1639435729891	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58687" "-no-remote" "-profile" "/tmp/rust_mozprofilehWrOzw"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639435730245	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilehWrOzw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58687/devtools/browser/ebcbf758-3de5-43ba-a2b9-ebebbb7c8d36
+1639435731375	Marionette	INFO	Listening on port 40961
+1639435731407	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 5450 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639435741657	Marionette	INFO	Stopped listening on port 40961
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639435753833	geckodriver	INFO	Listening on 127.0.0.1:42313
+1639435753848	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48705" "-no-remote" "-profile" "/tmp/rust_mozprofileXyzPAG"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639435754256	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXyzPAG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48705/devtools/browser/0145c83f-8315-4260-8e99-b37c9820382c
+1639435755279	Marionette	INFO	Listening on port 44941
+1639435755364	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 3904 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbuPly3A7P887BdiE_mJO26A1ut4lG_3oovKiP88Op_ffN8U4i2A_V4HnCFZGgIDrNOH9ly0tUpWh8oD6TIZnHHJhe7OM7TfSK_ZmDfKL-JVUCL6gNViH5DEjcQ2XMOO_WoxASRY&PersistentCookie=1&service=wise line 1 > eval line 1728 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/ContentMetaChild.jsm, line 179: InvalidStateError: JSWindowActorChild.sendAsyncMessage: JSWindowActorChild cannot send at the moment
+1639435778640	Marionette	INFO	Stopped listening on port 44941
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 52263, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639435828936	geckodriver	INFO	Listening on 127.0.0.1:34387
+1639435828946	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48207" "-no-remote" "-profile" "/tmp/rust_mozprofile5Bc3I0"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639435829341	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5Bc3I0/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48207/devtools/browser/84c8d3e7-1186-4ea4-854c-12fcbcd8697b
+1639435830355	Marionette	INFO	Listening on port 35435
+1639435830465	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 195 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbs3cR5hyY6SJ9_u8OoBITtiyqo6unO-3LBgrtNLSZxOpByUGoK8LwaW9kLYExDf0ikdF9s_s2GG6LFBomNPqfDQj1fGEZbwFpDEMZe_4C9P22tcWGHBE6AyOV2qdeJsrqwmvFOJ&PersistentCookie=1&service=wise line 1 > eval line 1644 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639435865933	Marionette	INFO	Stopped listening on port 35435
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1639435869518	Marionette	INFO	Stopped listening on port 45251
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639435872898	Marionette	INFO	Stopped listening on port 43485
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639435877396	Marionette	INFO	Stopped listening on port 36109
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639435880939	geckodriver	INFO	Listening on 127.0.0.1:38771
+1639435880951	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "32905" "-no-remote" "-profile" "/tmp/rust_mozprofilebo8gq0"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639435881345	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilebo8gq0/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:32905/devtools/browser/98d75335-dd92-4222-8701-8e50f05c5f75
+1639435882250	Marionette	INFO	Listening on port 39049
+1639435882269	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 4656 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbunbuVuVSMlprYCMwiiFmWQSy_oxWlzDAqOot1y55slZzR21YdKYtLJDF2CV-z8o8H6ALBCsJcKjSS5z93I_w5DS0n8nTnPC1UPqNZrW6lUMo71Ke0xrxsd8Wu0jsR2aCj80-P5&PersistentCookie=1&service=wise line 1 > eval line 6519 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639435910332	geckodriver	INFO	Listening on 127.0.0.1:39231
+1639435910343	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58967" "-no-remote" "-profile" "/tmp/rust_mozprofiletZSioM"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639435910704	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletZSioM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58967/devtools/browser/8672c93a-4e28-415d-a36c-0249ba3015d2
+1639435911720	Marionette	INFO	Listening on port 41331
+1639435911758	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 731 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbsaYn--iy4nzQ8xDUcfoH0woFnfZsI7o9xVuGM714U7U0Ly3UhNSvxwyyggNy0_B7Zuno5ik4iF5nXhE6lMflcG0T70QlbI7aMlR3WM26bVpYHEOWSuJYIchiUKxfTBBY5DvaAJ&PersistentCookie=1&service=wise line 1 > eval line 2342 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639436258647	geckodriver	INFO	Listening on 127.0.0.1:36403
+1639436258714	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "36101" "-no-remote" "-profile" "/tmp/rust_mozprofilejD7GTm"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639436259105	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilejD7GTm/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:36101/devtools/browser/0b979a30-ff76-42a0-9652-9e4fce3f65a5
+1639436260240	Marionette	INFO	Listening on port 36337
+1639436260365	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 6820 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639436267025	Marionette	INFO	Stopped listening on port 36337
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1639436335486	geckodriver	INFO	Listening on 127.0.0.1:49381
+1639436335496	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57653" "-no-remote" "-profile" "/tmp/rust_mozprofile1c13Ll"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639436335857	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1c13Ll/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57653/devtools/browser/260b3fc5-121a-4557-bf58-c633d0acc178
+1639436336761	Marionette	INFO	Listening on port 40801
+1639436336810	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 6185 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbuPHMH5NwfPsBr4LSsaeus7boGzCWrXcE6x75-092bDLHOpuLfB09LMIWIZdBEIjF2fHRUJfPDCdGKzW5Pa1hvwALUnShHnWia4b7n8xOYrGTCRRjhO7ZD0HFXuYMpjegSkO0ye&PersistentCookie=1&service=wise line 1 > eval line 1425 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639436348171	Marionette	INFO	Stopped listening on port 40801
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 56427, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639436350328	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://docs.google.com"
+1639436475286	geckodriver	INFO	Listening on 127.0.0.1:50151
+1639436475294	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52673" "-no-remote" "-profile" "/tmp/rust_mozprofileswQAfS"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639436475665	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileswQAfS/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52673/devtools/browser/44020a9c-fa73-41ba-83be-8e6b9ada3451
+1639436476788	Marionette	INFO	Listening on port 40725
+1639436476809	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 369 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbvlsQ4epYshPdbja09V9tBBMlJqDN_GCKN1nvGxFY8ANLAByuv9B7oGeF16K3k26R2GfaW29rR6lH19neQ2cu9utqRjyafwXEzW61XWFOj4_JMv5_Nm6GYPhvcoo3J0y_HYq1BS&PersistentCookie=1&service=wise line 1 > eval line 2163 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639436547173	geckodriver	INFO	Listening on 127.0.0.1:44191
+1639436547193	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "43221" "-no-remote" "-profile" "/tmp/rust_mozprofiletpBviv"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639436547574	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletpBviv/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:43221/devtools/browser/8e1164ff-309f-43c8-9d23-048a9e0ad12d
+1639436548576	Marionette	INFO	Listening on port 37187
+1639436548609	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 575 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbtnfyYqQB5Bgp1WMRs5uTxphkL3vhLLJSsLSBGnLL26qptrCCOZ60eCNDK7hexwXBmCnvPLcHwzP2PAjbQ7cs9CsljmFN86hgal3CNbjthLosWKtnqa-UoK9xsnVSjadhlLYhJ4&PersistentCookie=1&service=wise line 1 > eval line 34 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639436604904	geckodriver	INFO	Listening on 127.0.0.1:40061
+1639436604915	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46439" "-no-remote" "-profile" "/tmp/rust_mozprofilei1VWFC"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639436605286	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilei1VWFC/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46439/devtools/browser/507dca31-7612-4d17-a20a-a0330a2a7ec9
+1639436606577	Marionette	INFO	Listening on port 33993
+1639436606632	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 3714 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbsehkiG8ndlQLplPFXzqJM7-HzCnMP0ceriL1ezkuxzZ_LmOeaI6WcFFX6s0U9Z23F-tyxp_q9TP2gnGdQMZgC-A10J1d1cGPIW1GIyEPaFpt4cMZuZB0uFcCPJ58ficBkm0rGH&PersistentCookie=1&service=wise line 1 > eval line 6455 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639436645863	Marionette	INFO	Stopped listening on port 40725
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639436648459	Marionette	INFO	Stopped listening on port 37187
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1639436652153	Marionette	INFO	Stopped listening on port 41331
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639436678535	geckodriver	INFO	Listening on 127.0.0.1:49113
+1639436678552	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35181" "-no-remote" "-profile" "/tmp/rust_mozprofileVIQYi5"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639436679176	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileVIQYi5/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35181/devtools/browser/61f28909-3bdb-4647-b5f0-c98d2e998dd8
+1639436680337	Marionette	INFO	Listening on port 42455
+1639436680391	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 5412 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639436715544	Marionette	INFO	Stopped listening on port 42455
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 57995, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+1639436717273	geckodriver	INFO	Listening on 127.0.0.1:43001
+1639436717322	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45481" "-no-remote" "-profile" "/tmp/rust_mozprofileLpvPRg"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639436717711	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLpvPRg/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45481/devtools/browser/69f7a999-3804-4a1f-96fe-17b2f2b6b44e
+1639436718838	Marionette	INFO	Listening on port 38137
+1639436718955	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 561 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbtvYsa9I-Z0EdS-Jx60IWWl9w8Ave2KgT2nvuzA19vfvfz4HoPRQV1e-1TMnz9TZucCtFFmcyZBNEaW23GKUdUrKyqEJaGJPm_wRCtugRPXB9vSNpirmFO7Y_hTzkJaX1f54oRy&PersistentCookie=1&service=wise line 1 > eval line 331 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://docs.google.com"
+1639436921873	geckodriver	INFO	Listening on 127.0.0.1:43943
+1639436921927	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "38303" "-no-remote" "-profile" "/tmp/rust_mozprofileWsRVlG"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639436922285	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileWsRVlG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:38303/devtools/browser/141bff07-b164-47b2-b19d-6e774100ae7f
+1639436923204	Marionette	INFO	Listening on port 33813
+1639436923249	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 2781 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbveD_h3dsg1Lvj1B_z0mcx6cS8efe7n_BQ_hOGoy5F-7FS3rVh6pnX653kSHNQOfwzBdkCRkVbXf4bc3gWTAl0EOZrfUzn9YBB13d3R6wf88fffJYjvqhjCRGrU8z9RfMHtn0cI&PersistentCookie=1&service=wise line 1 > eval line 6385 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639436973224	geckodriver	INFO	Listening on 127.0.0.1:43525
+1639436973235	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58827" "-no-remote" "-profile" "/tmp/rust_mozprofileFdBWja"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639436973582	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileFdBWja/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58827/devtools/browser/cf1a305d-c992-4829-b7bb-2fb02834c030
+1639436974482	Marionette	INFO	Listening on port 35745
+1639436974556	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 5958 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbuppRVdnkRg1_TDEMaGSsRCNj-MHkmuEJtY8bl99L_JRfu_djUy_P0TtB4ioOLw7RUjNANGQGJ6TXzt7zuZn22OTyRUQTVWQ1lAJHr6Yc_g7X3f0ZufPo_Zpc8dwkwMW9A2mPxp&PersistentCookie=1&service=wise line 1 > eval line 6941 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1639437126012	geckodriver	INFO	Listening on 127.0.0.1:35989
+1639437126022	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "45001" "-no-remote" "-profile" "/tmp/rust_mozprofile7psUdy"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639437126405	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7psUdy/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:45001/devtools/browser/fa743195-93d8-4937-bb3b-180fbe221716
+1639437127905	Marionette	INFO	Listening on port 34009
+1639437127939	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 6443 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbv3gYw-Okj1xculLSYGvrpvF4njRONG531SMVtNV1FHoWyUjPLTTMjUTBKg6CeVMpYBDAcbFPeEynkj1PAW7_GSTkoKum7u9KLRvwcSs4RqAMIRVxIawjCQEsoj2SrIffLr7QMR&PersistentCookie=1&service=wise line 1 > eval line 1642 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639473485353	Marionette	INFO	Stopped listening on port 39049
+JavaScript error: , line 0: TypeError: NetworkError when attempting to fetch resource.
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B000B,name=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6C0025,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639473488215	Marionette	INFO	Stopped listening on port 35745
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639473489769	Marionette	INFO	Stopped listening on port 33993
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+[Parent 57636, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639473490978	Marionette	INFO	Stopped listening on port 34009
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://docs.google.com"
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://docs.google.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://docs.google.com"
+1639476278197	geckodriver	INFO	Listening on 127.0.0.1:48125
+1639476278299	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40507" "-no-remote" "-profile" "/tmp/rust_mozprofileYNpB6A"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639476279007	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileYNpB6A/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:40507/devtools/browser/439cbc0c-d6f9-4bd0-8866-172fc064ebab
+1639476280113	Marionette	INFO	Listening on port 39897
+1639476280245	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 6820 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbvAjwLooCYuREclnspwasI3fVOkaCY7kA3KMQc8EbXK4IMrgoksSfUO1z8vh9n8tEuXF256lHu4_uqw31H9YRkk9yzFoVM-Qdc-rNzOzdnCjwnHPmLAzV1Ya-WqgPVroFPGgAYj&PersistentCookie=1&service=wise line 1 > eval line 6981 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639476311269	Marionette	INFO	Stopped listening on port 33813
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639476314625	Marionette	INFO	Stopped listening on port 39897
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5B0008,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 64375, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+1639476404264	geckodriver	INFO	Listening on 127.0.0.1:49375
+1639476404322	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "48499" "-no-remote" "-profile" "/tmp/rust_mozprofilegbNH40"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639476404728	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegbNH40/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:48499/devtools/browser/27df636e-3b0a-457d-9b2b-ddb3bca4ab1e
+1639476405773	Marionette	INFO	Listening on port 33139
+1639476405860	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 6952 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbtCTgnPr2W6KC_HlheC5YBPjt7FKFYauv8FmvvL4WBmFo3vJIV1J6B7lYC7OtEo3ozqhtJYBmgi6JXJgIJalSyazXpd97ubvVJ2VGL7xQkmNjjVaiav1v9RolfkmO7sUJu8Dkgd&PersistentCookie=1&service=wise line 1 > eval line 4078 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639476489068	geckodriver	INFO	Listening on 127.0.0.1:48193
+1639476489137	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58839" "-no-remote" "-profile" "/tmp/rust_mozprofileD55eMv"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639476489528	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileD55eMv/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58839/devtools/browser/5ee35b57-0aee-4545-bd1b-4259e91bcc76
+1639476490448	Marionette	INFO	Listening on port 32825
+1639476490580	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1639476494279	Marionette	INFO	Stopped listening on port 32825
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639476612363	geckodriver	INFO	Listening on 127.0.0.1:40075
+1639476612373	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46065" "-no-remote" "-profile" "/tmp/rust_mozprofilesMpEnp"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639476612741	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesMpEnp/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:46065/devtools/browser/92aec8e9-1b8c-420c-a8ad-9cbad0237708
+1639476613903	Marionette	INFO	Listening on port 46119
+1639476614020	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 95 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbse3OnVy0BG2IwnLmU2e9VGZ8hDfVwX5ZYFrjwg38geHMIu18M88V9XCUrfzYf6sjmfzHFn_YaNtQkQJQB0XMW8V4Xq6sNxaAC7QASn9cT9mSSPxe0UzxTZDrQLZ-pfaQU7EB0N&PersistentCookie=1&service=wise line 1 > eval line 3791 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1639476798954	geckodriver	INFO	Listening on 127.0.0.1:49239
+1639476798972	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "58969" "-no-remote" "-profile" "/tmp/rust_mozprofileMMHSh3"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639476799373	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileMMHSh3/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58969/devtools/browser/64bfc7e1-d73a-498d-ab28-688a6078f822
+1639476800319	Marionette	INFO	Listening on port 44297
+1639476800393	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 4182 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbsPVRZlYTfkI2n8Ywu8dqihTCngajG67r10nUFbKamTYtQd37IgYE8GK7efd6PzWQazvPupfw_bMBpTq5wEI5V-ZL021b4xK4PB83P7-sW32ZFSijqhYQig9xMOFzYEKQXMnpLE&PersistentCookie=1&service=wise line 1 > eval line 273 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639476839810	Marionette	INFO	Stopped listening on port 44297
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1639476921855	Marionette	INFO	Stopped listening on port 33139
+1639476953694	geckodriver	INFO	Listening on 127.0.0.1:40013
+1639476953760	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33005" "-no-remote" "-profile" "/tmp/rust_mozprofileawlYCk"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639476954146	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileawlYCk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:33005/devtools/browser/1e1c0bf5-282d-41b8-8496-0ae6fdf737dd
+1639476955023	Marionette	INFO	Listening on port 39109
+1639476955104	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 964 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbvN6AcEivFXsgX2tgXWA_zJSqHI-rh6TQo6ncXCarpCjTpQSGAc8rtI46zYuiYe711SftWD1hccK5PejLjZUward7258mbzThMfTPGZ5htrZHlmjX1ubrEEbgab0wd-rs2kod7a&PersistentCookie=1&service=wise line 1 > eval line 3433 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639476978139	geckodriver	INFO	Listening on 127.0.0.1:59797
+1639476978151	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33579" "-no-remote" "-profile" "/tmp/rust_mozprofiledlNuaI"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639476978513	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiledlNuaI/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:33579/devtools/browser/e42019bb-c45e-4ee6-8286-e9f584362e4d
+1639476979433	Marionette	INFO	Listening on port 34687
+1639476979466	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 6011 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbtt3z7lfqJgFQFZJeIR09lMlGGEyHu1d-FVYvM2Tv-A91oxo-B83oPq4E3Zmvits8J5us-oDPGDvLODdXp7kVmcTLEWAPTz-G1V_6-Jsz0OuM_0bga5mCuO6RUu9uED12fsuEFc&PersistentCookie=1&service=wise line 1 > eval line 7256 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1639477805568	geckodriver	INFO	Listening on 127.0.0.1:58579
+1639477805589	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47019" "-no-remote" "-profile" "/tmp/rust_mozprofile1KkJfZ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639477806096	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1KkJfZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47019/devtools/browser/fde5d7fc-a988-467a-85c7-079b9e1bea7c
+1639477807245	Marionette	INFO	Listening on port 36117
+1639477807319	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 5404 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbvfOz1be6Z2nnlhYKYkrKc14PysSknN2ytXK8JDb678qXxDU6ObxpAQfD4_A5cxQngy2L3wzvKXuVwZd_FjU4C6L7n-HuvBkewj7eBT_IMGR5zIyngy3eaQQAyAm5FlJoJK_ozq&PersistentCookie=1&service=wise line 1 > eval line 3992 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: No addons in our list are installed.
+1639477975688	geckodriver	INFO	Listening on 127.0.0.1:48353
+1639477975747	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57063" "-no-remote" "-profile" "/tmp/rust_mozprofile7lgEu7"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639477977719	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile7lgEu7/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57063/devtools/browser/9f1ff107-ef80-4feb-aaf6-d2a4e40bca85
+1639477982345	Marionette	INFO	Listening on port 44949
+1639477982425	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 3906 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbu6nVazcuA7ZgIy6HoYSLQ9IpD5HNXwRHgch-tsFzRtnc2fxVjy-SGor8NBE3A5FL6nb81cFYdrh1Ga6rG1V5yWdLbPRzWQ0koSFM5lV3tbb8fn8G5DFuWWGo56rHFrQLrerPaG&PersistentCookie=1&service=wise line 1 > eval line 4300 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639478006437	Marionette	INFO	Stopped listening on port 44949
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 70344, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639478021281	Marionette	INFO	Stopped listening on port 39109
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1639478025137	Marionette	INFO	Stopped listening on port 38137
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639478028407	Marionette	INFO	Stopped listening on port 46119
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639478029829	Marionette	INFO	Stopped listening on port 34687
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1639478031065	Marionette	INFO	Stopped listening on port 36117
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639479262417	geckodriver	INFO	Listening on 127.0.0.1:59737
+1639479262929	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "55771" "-no-remote" "-profile" "/tmp/rust_mozprofileULv9yw"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639479263359	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileULv9yw/search.json.mozlz4", (void 0)))
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+DevTools listening on ws://localhost:55771/devtools/browser/1fb3361e-b1d7-470d-b151-722226c58883
+1639479264328	Marionette	INFO	Listening on port 39903
+1639479264348	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1639479266107	Marionette	INFO	Stopped listening on port 39903
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1639479266230	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1639479316691	geckodriver	INFO	Listening on 127.0.0.1:60443
+1639479316817	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "33345" "-no-remote" "-profile" "/tmp/rust_mozprofileDLfa3y"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639479317215	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileDLfa3y/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:33345/devtools/browser/df11a31c-f0ae-4bc1-af52-a9d2ddb95d7e
+1639479318135	Marionette	INFO	Listening on port 45227
+1639479318268	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 3758 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbvCCXqwxG54kn_9BGa3r5Vtm6uEt9XnUMsUIXdfGVjKSoNUEvhtkpWpblloDBSRpbVE-L975VS4zaUYakanpLYiP7smGRx0qTThY0g5Z2JOZpLCVDvKR3r-Amb6RnzRb8M0HTqt&PersistentCookie=1&service=wise line 1 > eval line 6352 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639479355342	Marionette	INFO	Stopped listening on port 45227
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 71578, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639479358573	geckodriver	INFO	Listening on 127.0.0.1:33507
+1639479358653	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57811" "-no-remote" "-profile" "/tmp/rust_mozprofileir3zJk"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639479359042	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileir3zJk/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57811/devtools/browser/de1f1dde-b74c-41c9-97f4-4cc19629a456
+1639479359986	Marionette	INFO	Listening on port 44485
+1639479360092	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 322 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbumba2YgfGmHE5SHyfNZw8sXiByMpvfkatcaNVMygHByM6vGaRBDzyPAFRwCcVje7dK2_Zonka6-NGLdLoaKI7p6Lwi1_Jdh-1VdJk-xUfgU326ZuttPGhv6U4QDENtAh3VJAdl&PersistentCookie=1&service=wise line 1 > eval line 4574 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639479404002	Marionette	INFO	Stopped listening on port 44485
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 71855, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+1639480102214	geckodriver	INFO	Listening on 127.0.0.1:47549
+1639480102287	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37251" "-no-remote" "-profile" "/tmp/rust_mozprofileyGoxZM"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639480102687	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileyGoxZM/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37251/devtools/browser/c47c33bd-b2e6-4ece-9461-b6a275f68376
+1639480103689	Marionette	INFO	Listening on port 35597
+1639480103708	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 6877 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639480108802	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1639480117483	Marionette	INFO	Stopped listening on port 35597
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 72940, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+1639480138758	geckodriver	INFO	Listening on 127.0.0.1:49041
+1639480138838	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "60393" "-no-remote" "-profile" "/tmp/rust_mozprofileerUlrg"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639480139236	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileerUlrg/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:60393/devtools/browser/9bece224-2f74-474b-ab57-5e6c7a4bc1d0
+1639480140167	Marionette	INFO	Listening on port 46393
+1639480140279	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 7557 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1639480151510	Marionette	INFO	Stopped listening on port 46393
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639480238171	geckodriver	INFO	Listening on 127.0.0.1:39195
+1639480238241	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47831" "-no-remote" "-profile" "/tmp/rust_mozprofileLcWSN1"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639480238623	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLcWSN1/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:47831/devtools/browser/d58f2f13-d35b-4f08-a61a-51fa0107e89d
+1639480239531	Marionette	INFO	Listening on port 34437
+1639480239567	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 723 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbt44VmqP5Ew0OOOFiyfz77DtozWWKqbQvSMMbOKD6OxdvcS4Mcd-m3MRELBNFwB7vbJfqjMR6Im1Klb-OV7efwy_PDKlJGEvZApouVbj_UQ9zpWvaC8lTQwDCIq0ZnfM9lAudCY&PersistentCookie=1&service=wise line 1 > eval line 6270 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639480263020	Marionette	INFO	Stopped listening on port 34437
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639480265410	geckodriver	INFO	Listening on 127.0.0.1:37661
+1639480265520	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56357" "-no-remote" "-profile" "/tmp/rust_mozprofileBjFfF7"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639480265908	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileBjFfF7/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56357/devtools/browser/a0c9802f-081f-4985-92c0-f128586c4e61
+1639480266850	Marionette	INFO	Listening on port 46735
+1639480266961	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 5562 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbvOZieUHR6I79D3pyzpK9NbUBLIo1lsZu3uE2zhh_rcYyspVLndLBggRO_CdYNssKGIgK6elCTlvfcsk4nxcprlT_F1I9wOI5b0Gkrgv7oJiLIMSjTAWDE_-jW30CnMrZT27VdG&PersistentCookie=1&service=wise line 1 > eval line 7685 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639480284480	Marionette	INFO	Stopped listening on port 46735
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 73924, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639480285516	geckodriver	INFO	Listening on 127.0.0.1:37413
+1639480285526	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54465" "-no-remote" "-profile" "/tmp/rust_mozprofileLmY6F4"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639480285884	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLmY6F4/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54465/devtools/browser/95b07599-936a-4bb8-9a5f-a9a4af7d33ef
+1639480286809	Marionette	INFO	Listening on port 36253
+1639480286840	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 3396 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbvFki06KFJTRry_-2re-_7K8q2pYmlaSkrcx8aOOLsZ5sw0Fp7qU3jqLTULhUjOt69YUoQZURZjcxPCyGBXrQmg8uBKOL9KKr74rzXQZ5moy6rvjTU8EOdSFqqRO3zcqTybx02d&PersistentCookie=1&service=wise line 1 > eval line 2890 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639480313312	Marionette	INFO	Stopped listening on port 36253
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 74173, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+1639480316074	geckodriver	INFO	Listening on 127.0.0.1:36921
+1639480316148	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41345" "-no-remote" "-profile" "/tmp/rust_mozprofile0gyRoi"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639480316542	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0gyRoi/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41345/devtools/browser/cc3674c6-9c46-4263-b5b6-373c8182db11
+1639480317578	Marionette	INFO	Listening on port 38149
+1639480317665	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 4397 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbutATX9cb2aeKdI9RkaJnfi7TaTyof5i-FQxzo05ZPS_jnPi3sxv7koXvcO7Wy3YL_9hRBJJRp-wxYUV3O3VZCG06pe6ZeepYl3t4E4ubEEi9EmxqU9XLwvpbrTgoKhNfLte-k9&PersistentCookie=1&service=wise line 1 > eval line 3242 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639480339813	Marionette	INFO	Stopped listening on port 38149
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 74439, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639480537237	geckodriver	INFO	Listening on 127.0.0.1:60173
+1639480537305	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51261" "-no-remote" "-profile" "/tmp/rust_mozprofileB8Vntz"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639480537699	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileB8Vntz/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51261/devtools/browser/ea5c7f5b-c92f-4347-a30f-5bafff0a2c71
+1639480538660	Marionette	INFO	Listening on port 43995
+1639480538720	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 4108 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+1639480546612	geckodriver::marionette	ERROR	Failed to close browser connection: Socket not connected (os error 107)
+1639480560738	Marionette	INFO	Stopped listening on port 43995
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639480575488	geckodriver	INFO	Listening on 127.0.0.1:36001
+1639480575538	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37275" "-no-remote" "-profile" "/tmp/rust_mozprofilecKZq62"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639480575925	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecKZq62/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37275/devtools/browser/c9b90eda-c2d3-47d0-98f6-5b1363221248
+1639480576970	Marionette	INFO	Listening on port 35445
+1639480577054	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 4557 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbuLzS8zEv3_hlj6VIqju_CETmd-OFgiou4xSqKE-YvZP3Gr5oJiWjSTS0MghEbAs4Z374vUi743RGJy9mV1_rks0jc61lokY3iefLRtTP3_WWXU5JuA-JROtstGbNV7CfWrheLt&PersistentCookie=1&service=wise line 1 > eval line 2566 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639480603723	Marionette	INFO	Stopped listening on port 35445
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6C0025,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 75297, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+1639480632174	geckodriver	INFO	Listening on 127.0.0.1:55623
+1639480632183	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "50499" "-no-remote" "-profile" "/tmp/rust_mozprofileQiRqCf"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639480632549	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQiRqCf/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:50499/devtools/browser/1407e223-2770-4a2a-b360-a179072179a1
+1639480633517	Marionette	INFO	Listening on port 46271
+1639480633616	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 3998 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbu7EbL7TBTMYLKcnBo1FbdwQbsx6LW4B08YSF-OO4gFBIpqRWQRyKoc-iGmyI7ZU4HxnL_F9Mnj-iHSBSeyzs7wPJTUQI9bD9Xgedd6Bd23xnNmlJf_EExx3ChXoApSJHTiWXo6&PersistentCookie=1&service=wise line 1 > eval line 3316 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639480656926	Marionette	INFO	Stopped listening on port 46271
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 75596, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639480847893	geckodriver	INFO	Listening on 127.0.0.1:35171
+1639480847906	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51071" "-no-remote" "-profile" "/tmp/rust_mozprofileM6KULE"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1639480848279	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileM6KULE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51071/devtools/browser/dbb2e0be-f3af-43cc-9f12-3fdd55e0ad80
+1639480849208	Marionette	INFO	Listening on port 40195
+1639480849221	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+ATTENTION: default value of option mesa_glthread overridden by environment.
+JavaScript warning: https://accounts.google.com/ServiceLogin?service=wise&passive=1209600&continue=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&followup=https://docs.google.com/forms/d/e/1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ/viewform&ltmpl=forms line 1 > eval line 4127 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+JavaScript error: resource://gre/modules/LoginManagerChild.jsm, line 194: NS_ERROR_XPC_JAVASCRIPT_ERROR_WITH_DETAILS: [JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]'[JavaScript Error: "Invalid autocomplete selectedIndex" {file: "resource://gre/actors/AutoCompleteChild.jsm" line: 125}]' when calling method: [nsIAutoCompletePopup::selectedIndex]
+JavaScript warning: https://accounts.google.com/signin/continue?sarp=1&scc=0&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fd%2Fe%2F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%2Fviewform&plt=AKgnsbtVSgwKewxLGgixAoU_k9cZbRa88v8GCewGQAIAK8Bsx-_Co4rh-ZFEbdPmU35Sio4ZjY2beRLoCv0XkY2PXSUKulh4-QvJeURInRYux2azVWTqqoviwzb5cdcHAOB0zUAPVX7A&PersistentCookie=1&service=wise line 1 > eval line 1576 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1639480875747	Marionette	INFO	Stopped listening on port 40195
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+[Parent 76028, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file /build/firefox/src/firefox-95.0/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
