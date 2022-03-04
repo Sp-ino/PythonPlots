@@ -25,19 +25,30 @@ def main():
     
     p.add_argument("filename", 
                    type = str, 
-                   help = "name of the .csv file")
+                   help = "name of the .csv file"
+                   )
     p.add_argument("-x", 
                    "--x_label",
                    type = str, 
-                   help = "x label")
+                   help = "x label"
+                   )
     p.add_argument("-y", 
                    "--y_label", 
                    type = str, 
-                   help = "y label")
+                   help = "y label"
+                   )
     p.add_argument("-p", 
                    "--userpath", 
                    type = str, 
-                   help = "user specified path")
+                   help = "user specified path"
+                   )
+    p.add_argument("-m",
+                   "--multiplier",
+                   type = float,
+                   default = 1,
+                   help = "data is multiplied by the specified factor.\
+                           Default value is 1"
+                   )
     
     args = p.parse_args()
     #------------------------------------------------------------------------------
@@ -56,9 +67,14 @@ def main():
     
     #--------------------------Import list from csv--------------------------------
     try:
-        data = np.genfromtxt(file, delimiter = ",") 
-    except:
-        print("Could not import " + args.filename)
+        data = args.multiplier * np.genfromtxt(file, delimiter = ",")
+        if len(data.shape) > 1:
+            data = data[1:,1]
+        # data = data[1:101,1]
+        # data = data.transpose()
+        # data = -np.concatenate((data[1,1:], data[2,1:], data[3,1:], data[4,1:], data[5,1:], data[6,1:]), axis = 0)
+    except OSError:
+        print("\nCould not import " + args.filename)
         sys.exit(1)
     #------------------------------------------------------------------------------
      
@@ -79,7 +95,10 @@ def main():
     textstr = '\n'.join((
         r'$\mu=%.2f$' % (mean, ),
         r'$\sigma=%.2f$' % (stdev, ),
-        r'$N_{points}=%d$' % (datalen, )))
+        r'$N_{points}=%d$' % (datalen, ),
+        r'$Min=%f$' % (np.min(data), ),
+        r'$Max=%f$' % (np.max(data), ),
+        ))
     
     ax.hist(data)
     ax.text(0.05, 0.95, textstr, transform = ax.transAxes, fontsize = 14,
@@ -87,8 +106,8 @@ def main():
     
     fig.show()
     
-    savepath = "/home/spino/PhD/Lavori/ADC_test/Manoscritti/figures/"
-    figname = "sndr_v9_mismatch.png"
+    savepath = "/home/spino/PhD/Lavori/ADC_test/CSV/v12_results/" #"Manoscritti/figures/"
+    figname = "a.png"
     figurepath = savepath + figname
     
     try:

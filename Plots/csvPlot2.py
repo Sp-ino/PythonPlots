@@ -157,6 +157,7 @@ def main():
                                     #trace in this way traces can be iteratively plotted with
                                     #for trace in ydata:
                                     #   plot(trace)
+
     else:    
         if args.userxval is None: 
             rawxdata = data["x"]
@@ -208,7 +209,7 @@ def main():
     if args.transf:
         Tsample = 0.000000052
         N = 32                                                          #N should be a power of 2
-        startdft = 2
+        startdft = 3
         sndr_list = []
         
         if args.multicol:                                               #if -m is true, compute DFT and THD for each trace
@@ -281,7 +282,7 @@ def main():
                        "g-", label = "clock")
            
     elif args.plottype == "stem":                                       #produce a stem plot
-        bottomval = -95                                                 #decide which is the bottomline position
+        bottomval = -220                                                 #decide which is the bottomline position
         if args.multicol:
             for curve in ydata:
                 ax.stem(xdata[start_index:stop_index], curve[start_index:stop_index], bottom = bottomval) #if -m arg is true, plot all traces iteratively
@@ -309,12 +310,12 @@ def main():
     
     #add labels to axes
     if args.x_label is None: #decide which label to use for x axis (default or user defined)
-        x_lab = "$V_{id}$ [s]" #"$f$ [MHz]" 
+        x_lab = "$V_{pp}$ [V]" #"$f$ [MHz]" 
     else:
         x_lab = args.x_label
     
     if args.y_label is None: #decide which label to use for y axis (default or user defined)
-        y_lab = "$C_{in}$ [F]"#"Tensione [V]" #"Ampiezza [dB20]" 
+        y_lab = "$SNDR$ [dB]"#"Tensione [V]" #"Ampiezza [dB20]" 
     else:
         y_lab = args.y_label
     
