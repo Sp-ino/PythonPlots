@@ -51,7 +51,6 @@ WebDriverWait(browser, 20).until(EC.element_to_be_clickable(('xpath', gform_facu
 
 
 
-
 secondtext[2].send_keys(month)
 secondtext[2].send_keys(day)
 secondtext[2].send_keys(year)
