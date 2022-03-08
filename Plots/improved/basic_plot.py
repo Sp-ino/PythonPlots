@@ -117,7 +117,7 @@ def main():
     
     #save and show the result
     savepath = "/home/spino/PhD/Lavori/ADC_test/Manoscritti/figures/"
-    figname = "a.png"
+    figname = args.filename[0:-4] + ".png"
     figurepath = savepath + figname
     try:
         fig.savefig(figurepath, dpi = 600)
