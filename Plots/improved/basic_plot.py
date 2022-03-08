@@ -16,7 +16,7 @@ def main():
     
     #------------------------------Argument parsing-------------------------
     p = ArgumentParser(description = 
-                       "This script allows to compute the rms value of a sequence imported from a virtuoso .csv")
+                       "This script allows to plot curves exported from virtuoso as .csv files.")
     
     p.add_argument("filename", 
                    type = str, 
@@ -41,11 +41,18 @@ def main():
                    "--stop", 
                    type = int, 
                    help = "index of the last element to be plotted")
+    p.add_argument("-m",
+                   "--multiplier",
+                   type = float,
+                   default = 1,
+                   help = "data is multiplied by the specified factor.\
+                           Default value is 1"
+                   )
     
     args = p.parse_args() 
     #-----------------------------------------------------------------------
 
-    #---------------------------Generate file paths-------------------------
+    #----------------------Generate file paths and import-------------------
     #decide in which path to look for the files (default or user defined)
     if args.userpath is None:
         filepath = "/home/spino/PhD/Lavori/ADC_test/CSV/" #if userpath is not specified then a default path is used 
@@ -53,6 +60,21 @@ def main():
         filepath = args.userpath
     
     file = filepath + args.filename
+
+    try:
+        data = np.genfromtxt(file, delimiter = ",")
+    except FileNotFoundError as e:
+        print("Error: ", e)
+        sys.exit(1) 
+
+    if args.multiplier is not None:
+        mul = args.multiplier
+    else:
+        mul = 1
+
+    data_rows = data.transpose()
+    xdata = data_rows[0, 1:]
+    ydata = mul * data_rows[1:, 1:]
     #-----------------------------------------------------------------------
 
     #---------------------------Read arguments------------------------------
@@ -67,7 +89,7 @@ def main():
         stop_index = xdata.size
 
     if args.x_label is not None:
-        xlab = args.xlabel
+        xlab = args.x_label
     else:
         xlab = "x axis"
 
@@ -78,24 +100,14 @@ def main():
     #-----------------------------------------------------------------------
 
 
-    #---------------------------Import, plot and save-----------------------
-    try:
-        data = np.genfromtxt(file, delimiter = ",") #if -m is true then data is imported as a numpy matrix
-    except:
-        print("Could not import " + args.filename)
-        sys.exit(1) 
+    #-----------------------Extract vectors, plot and save------------------
+    fig, ax = plt.subplots(figsize=(7.5, 4.5))
 
-    data_rows = data.transpose()
-    xdata = data_rows[0, 1:]
-    ydata = data_rows[1, 1:]
+    for trace in ydata:
+        ax.plot(xdata[start_index:stop_index], trace[start_index:stop_index])
 
-    fig, ax = plt.subplot(figsize=(7.5, 4.5))
-
-    ax.plot(xdata[start_index:stop_index], ydata[start_index:stop_index])
-
-    #add legend if necessary
-    if (args.filename2 is not None and (args.diff is None or args.diff == False)) or args.filename3 is not None:
-        ax.legend(loc = "lower right")
+    # #add legend if necessary
+    # ax.legend(loc = "lower right")
     
     ax.set_xlabel(xlab) #add x label
     ax.set_ylabel(ylab) #add y label
