@@ -68,11 +68,11 @@ def main():
     #--------------------------Import list from csv--------------------------------
     try:
         data = args.multiplier * np.genfromtxt(file, delimiter = ",")
+
+        # if data.shape has len greater than 1 it means the array imported from .csv has 2 columns
+        # therefore, take only the second column (y values)
         if len(data.shape) > 1:
             data = data[1:,1]
-        # data = data[1:101,1]
-        # data = data.transpose()
-        # data = -np.concatenate((data[1,1:], data[2,1:], data[3,1:], data[4,1:], data[5,1:], data[6,1:]), axis = 0)
     except OSError:
         print("\nCould not import " + args.filename)
         sys.exit(1)
