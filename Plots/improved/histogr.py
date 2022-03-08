@@ -1,9 +1,12 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+
 """
-Created on Sun Jan 16 11:20:35 2022
+Created on Tue Mar  8 19:35:25 2022
 
 @author: spino
+Copyright (c) 2022 Valerio Spinogatti
+Licensed under GNU license
 """
 
 import sys
@@ -11,6 +14,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import scipy.fftpack as fttp
 from argparse import ArgumentParser
+
+
 
 def main():
     plt.rcParams.update({

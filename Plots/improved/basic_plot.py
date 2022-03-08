@@ -1,6 +1,13 @@
 #!usr/bin/python
 # -*- coding: utf-8 -*-
 
+"""
+Created on Tue Mar  8 19:35:25 2022
+
+@author: spino
+Copyright (c) 2022 Valerio Spinogatti
+Licensed under GNU license
+"""
 
 import sys
 import numpy as np
