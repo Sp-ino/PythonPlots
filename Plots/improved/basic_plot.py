@@ -86,7 +86,7 @@ def main():
     ydata = mul * data_rows[1:, 1:]
     #-----------------------------------------------------------------------
 
-    #---------------------------Read arguments------------------------------
+    #----------------------Save arguments into variables--------------------
     if args.start is not None:  
         start_index = args.start
     else:
