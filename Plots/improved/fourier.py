@@ -88,9 +88,9 @@ def main():
 
     #----------------------Save arguments into variables--------------------
     if args.start is not None:  
-        start_index = args.start
+        first_sample = args.start
     else:
-        start_index = 0  
+        first_sample = 0  
         
     if args.x_label is not None:
         xlab = args.x_label
@@ -105,48 +105,67 @@ def main():
 
 
     #-----------------------------------------------------------------------
-    Tsample = 0.000000052
+    Tsample = 5e-9
     N = 32                                                          #N should be a power of 2
     sndr_list = []
     n_traces = ydata.shape[0]
+    bottomval = -80
+    print("\n\nn_traces: ", n_traces, "\n\n")
     
-    if args.multicol:                                               #if -m is true, compute DFT and THD for each trace
-        index = 0
-        linydata = np.zeros((n_traces, N//2))
-        for curve in ydata:
-            totransform = curve[start_index:N+start_index] - 1            #compute DFT
-            plt.plot(totransform, "-o")
-            transform = fft(totransform)
-            linydata[index,:] += 2.0/N * np.abs(transform[:N//2])
-            totsquared = 0                                          #compute THD
-            for harm in linydata[index,2:linydata[0,:].size]:
-                totsquared = totsquared + pow(harm,2)
-            thdlin = np.sqrt(totsquared)/linydata[index,1]
-            thd = 20*np.log10(thdlin)   
-            sndr_list.append(-thd)
-            print("THD =", thd)
-            index+=1
-    # else:
-    #     totransform = ydata[start_index:N+start_index] - 1                #compute DFT
-    #     plt.plot(totransform, "-o")
-    #     transform = fttp.fft(totransform)
-    #     linydata = 2.0/N * np.abs(transform[:N//2])
-        
-    #     totsquared = 0                                              #compute THD
-    #     for harm in linydata[2:linydata.size-1]:
-    #         totsquared = totsquared + pow(harm,2)   
-    #     thdlin = np.sqrt(totsquared)/linydata[1]
-    #     thd = 20*np.log10(thdlin)
-    #     print("THD =", thd)
-    # 
-    ydata = 20*np.log10(linydata)               #compute DFT in dB
-    
-    xdata = np.linspace(0.0, 1.0/(Tsample*2*1000000), N//2+1) #compute x-axis for the DFT
+
+    linydata = np.zeros((n_traces, N//2))
+
+    for index, curve in enumerate(ydata):
+        totransform = curve[first_sample:N+first_sample] - 1            #compute DFT
+        plt.plot(totransform, "-o")
+        transform = fft(totransform)
+        linydata[index,:] += 2.0/N * np.abs(transform[:N//2])
+        totsquared = 0                                          #compute THD
+        for harm in linydata[index,2:linydata[0,:].size]:
+            totsquared = totsquared + pow(harm,2)
+        thdlin = np.sqrt(totsquared)/linydata[index,1]
+        thd = 20*np.log10(thdlin)   
+        sndr_list.append(-thd)
+        print("THD =", thd)
+
     start_index = 0
     stop_index = N//2
     
-    if len(sndr_list) >= 2 and args.savethd: 
-        outname = "sndr_" + args.filename
-        outfile = filepath + outname
-        np.savetxt(outfile, sndr_list, delimiter = ",")
+    xdata = np.linspace(0.0, 1.0/(2*Tsample), N//2+1) #compute x-axis for the DFT
+    ydata = 20*np.log10(linydata)               #compute DFT in dB
+    
+    # if len(sndr_list) >= 2 and args.savethd: 
+    #     outname = "sndr_" + args.filename
+    #     outfile = filepath + outname
+    #     np.savetxt(outfile, sndr_list, delimiter = ",")
     #-----------------------------------------------------------------------
+
+
+    #-----------------------Extract vectors, plot and save------------------
+    fig, ax = plt.subplots(figsize=(7.5, 4.5))
+
+    for trace in ydata:
+        ax.stem(xdata[start_index:stop_index], trace[start_index:stop_index], bottom = bottomval) #if -m arg is true, plot all traces iteratively
+
+    # #add legend if necessary
+    # ax.legend(loc = "lower right")
+    
+    ax.set_xlabel(xlab) #add x label
+    ax.set_ylabel(ylab) #add y label
+
+    #clean whitespace padding
+    fig.tight_layout()
+    
+    #save and show the result
+    savepath = "/home/spino/PhD/Lavori/ADC_test/Manoscritti/figures/"
+    figname = "dft_" + args.filename[0:-4] + ".png"
+    figurepath = savepath + figname
+    try:
+        fig.savefig(figurepath, dpi = 600)
+    except:
+        print("Couldn't save figure to specified path. Check savepath and make sure it exists.")
+    #-----------------------------------------------------------------------
+    
+    
+if __name__ == "__main__":
+    main()
