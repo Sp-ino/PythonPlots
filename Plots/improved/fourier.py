@@ -36,7 +36,7 @@ def main():
                    "--userpath", 
                    type = str, 
                    help = "user specified path")
-    p.add_argument("-x", 
+    p.add_argument("-x",
                    "--x_label",
                    type = str, 
                    help = "x label")
@@ -54,7 +54,7 @@ def main():
                    default = 1,
                    help = "data is multiplied by the specified factor.\
                            Default value is 1"
-                   )
+                    )
     p.add_argument("-s", 
                    "--savethd", 
                    type = bool,
@@ -139,7 +139,7 @@ def main():
         thdlin = np.sqrt(totsquared)/linydata[index, fundam_index]
         thd = 20*np.log10(thdlin)   
         sndr_list.append(-thd)
-        print("THD =", thd)
+        print("SNDR =", -thd)
 
     start_index = 0
     stop_index = N
@@ -160,9 +160,18 @@ def main():
     for trace in ydata:
         ax.stem(xdata[start_index:stop_index], trace[start_index:stop_index], bottom = bottomval)
 
+    if len(sndr_list) == 1:
+        props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
+        textstr = '\n'.join((
+            r'$SNDR =%.2f$' % (sndr_list[0], ),
+            ))
+
     # #add legend if necessary
     # ax.legend(loc = "lower right")
     
+    ax.text(0.05, 0.95, textstr, transform = ax.transAxes, fontsize = 14,
+            verticalalignment = 'top', bbox = props)
+
     ax.set_xlabel(xlab) #add x label
     ax.set_ylabel(ylab) #add y label
 
