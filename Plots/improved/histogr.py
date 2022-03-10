@@ -111,7 +111,7 @@ def main():
     
     fig.show()
     
-    savepath = "/home/spino/PhD/Lavori/ADC_test/CSV/Manoscritti/figures/"
+    savepath = "/home/spino/PhD/Lavori/ADC_test/Manoscritti/figures/"
     figname = args.filename[0:-4] + ".png"
     figurepath = savepath + figname
     
