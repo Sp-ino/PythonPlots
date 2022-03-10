@@ -123,7 +123,7 @@ def main():
     bottomval = -80
     print("\n\nn_traces: ", n_traces, "\n\n")    
     if args.nyquist:
-        fundam_index = N/2
+        fundam_index = N//2
     else:
         fundam_index = 2
 
@@ -135,11 +135,6 @@ def main():
         transform = fft(totransform)
         linydata[index,:] += 2.0/N * np.abs(transform[:N])
 
-        # totsquared = 0                                          #compute THD
-        # for harm in linydata[index, 2:N//2]:
-        #     # print("\n\nlinydata: ", linydata, "\n\n")
-        #     # print("\n\nlinydata sliced: ", linydata[index, 2:N//2], "\n\n")
-        #     totsquared = totsquared + pow(harm,2)
         totsquared = sum(np.power(linydata[index, 2:N//2], 2))
         thdlin = np.sqrt(totsquared)/linydata[index, fundam_index]
         thd = 20*np.log10(thdlin)   
