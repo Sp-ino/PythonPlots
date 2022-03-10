@@ -71,7 +71,7 @@ def main():
     file = filepath + args.filename
 
     try:
-        data = np.genfromtxt(file, delimiter = ",")
+        data = np.genfromtxt(file, delimiter = ",", dtype = np.double)
     except FileNotFoundError as e:
         print("Error: ", e)
         sys.exit(1) 

@@ -220,6 +220,7 @@ def main():
                 plt.plot(totransform, "-o")
                 transform = fttp.fft(totransform)
                 linydata[index,:] += 2.0/N * np.abs(transform[:N//2])
+                print("\n\nlinydata: ", linydata, "\n\n")
                 totsquared = 0                                          #compute THD
                 for harm in linydata[index,2:linydata[0,:].size]:
                     totsquared = totsquared + pow(harm,2)
@@ -285,6 +286,7 @@ def main():
         bottomval = -220                                                 #decide which is the bottomline position
         if args.multicol:
             for curve in ydata:
+
                 ax.stem(xdata[start_index:stop_index], curve[start_index:stop_index], bottom = bottomval) #if -m arg is true, plot all traces iteratively
         else:
             if args.diff == False or args.diff is None: #plot ydata
