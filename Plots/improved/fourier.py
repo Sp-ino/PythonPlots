@@ -55,6 +55,17 @@ def main():
                    help = "data is multiplied by the specified factor.\
                            Default value is 1"
                    )
+    p.add_argument("-s", 
+                   "--savethd", 
+                   type = bool,
+                   default = None,
+                   help = "This option allows to save the list of THD values into a THD file")
+    p.add_argument("-n", 
+                   "--nyquist", 
+                   type = bool,
+                   default = None,
+                   help = "This option allows proper computation of THD when the input signal is a tone at Nyquist.")
+        
     
     args = p.parse_args() 
     #-----------------------------------------------------------------------
@@ -70,7 +81,7 @@ def main():
     file = filepath + args.filename
 
     try:
-        data = np.genfromtxt(file, delimiter = ",")
+        data = np.genfromtxt(file, delimiter = ",", dtype = np.double)
     except FileNotFoundError as e:
         print("Error: ", e)
         sys.exit(1) 
@@ -95,7 +106,7 @@ def main():
     if args.x_label is not None:
         xlab = args.x_label
     else:
-        xlab = "frequeny [Hz]"
+        xlab = "frequency [Hz]"
 
     if args.y_label is not None:
         ylab = args.y_label
@@ -110,34 +121,41 @@ def main():
     sndr_list = []
     n_traces = ydata.shape[0]
     bottomval = -80
-    print("\n\nn_traces: ", n_traces, "\n\n")
-    
+    print("\n\nn_traces: ", n_traces, "\n\n")    
+    if args.nyquist:
+        fundam_index = N/2
+    else:
+        fundam_index = 2
 
-    linydata = np.zeros((n_traces, N//2))
+    linydata = np.zeros((n_traces, N))
 
     for index, curve in enumerate(ydata):
         totransform = curve[first_sample:N+first_sample] - 1            #compute DFT
         plt.plot(totransform, "-o")
         transform = fft(totransform)
-        linydata[index,:] += 2.0/N * np.abs(transform[:N//2])
-        totsquared = 0                                          #compute THD
-        for harm in linydata[index,2:linydata[0,:].size]:
-            totsquared = totsquared + pow(harm,2)
-        thdlin = np.sqrt(totsquared)/linydata[index,1]
+        linydata[index,:] += 2.0/N * np.abs(transform[:N])
+
+        # totsquared = 0                                          #compute THD
+        # for harm in linydata[index, 2:N//2]:
+        #     # print("\n\nlinydata: ", linydata, "\n\n")
+        #     # print("\n\nlinydata sliced: ", linydata[index, 2:N//2], "\n\n")
+        #     totsquared = totsquared + pow(harm,2)
+        totsquared = sum(np.power(linydata[index, 2:N//2], 2))
+        thdlin = np.sqrt(totsquared)/linydata[index, fundam_index]
         thd = 20*np.log10(thdlin)   
         sndr_list.append(-thd)
         print("THD =", thd)
 
     start_index = 0
-    stop_index = N//2
+    stop_index = N
     
-    xdata = np.linspace(0.0, 1.0/(2*Tsample), N//2+1) #compute x-axis for the DFT
+    xdata = np.linspace(0.0, 1.0/(Tsample), N+1) #compute x-axis for the DFT
     ydata = 20*np.log10(linydata)               #compute DFT in dB
-    
-    # if len(sndr_list) >= 2 and args.savethd: 
-    #     outname = "sndr_" + args.filename
-    #     outfile = filepath + outname
-    #     np.savetxt(outfile, sndr_list, delimiter = ",")
+
+    if len(sndr_list) >= 2 and args.savethd: 
+        outname = "sndr_" + args.filename
+        outfile = filepath + outname
+        np.savetxt(outfile, sndr_list, delimiter = ",")
     #-----------------------------------------------------------------------
 
 
@@ -145,7 +163,7 @@ def main():
     fig, ax = plt.subplots(figsize=(7.5, 4.5))
 
     for trace in ydata:
-        ax.stem(xdata[start_index:stop_index], trace[start_index:stop_index], bottom = bottomval) #if -m arg is true, plot all traces iteratively
+        ax.stem(xdata[start_index:stop_index], trace[start_index:stop_index], bottom = bottomval)
 
     # #add legend if necessary
     # ax.legend(loc = "lower right")
