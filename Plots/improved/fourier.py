@@ -73,8 +73,9 @@ def main():
 
     #----------------------Generate file paths and import-------------------
     #decide in which path to look for the files (default or user defined)
+    workdir = "ADC_semiasy" 
     if args.userpath is None:
-        filepath = "/home/spino/PhD/Lavori/ADC_test/CSV/" #if userpath is not specified then a default path is used 
+        filepath = f"/home/spino/PhD/Lavori/{workdir}/CSV/" #if userpath is not specified then a default path is used 
     else:
         filepath = args.userpath
     
@@ -125,7 +126,7 @@ def main():
     if args.nyquist:
         fundam_index = N//2
     else:
-        fundam_index = 2
+        fundam_index = 1
 
     linydata = np.zeros((n_traces, N))
 
@@ -165,12 +166,12 @@ def main():
         textstr = '\n'.join((
             r'$SNDR =%.2f$' % (sndr_list[0], ),
             ))
+        ax.text(0.05, 0.95, textstr, transform = ax.transAxes, fontsize = 14,
+                verticalalignment = 'top', bbox = props)
 
     # #add legend if necessary
     # ax.legend(loc = "lower right")
     
-    ax.text(0.05, 0.95, textstr, transform = ax.transAxes, fontsize = 14,
-            verticalalignment = 'top', bbox = props)
 
     ax.set_xlabel(xlab) #add x label
     ax.set_ylabel(ylab) #add y label
@@ -179,7 +180,7 @@ def main():
     fig.tight_layout()
     
     #save and show the result
-    savepath = "/home/spino/PhD/Lavori/ADC_test/Manoscritti/figures/"
+    savepath = "/home/spino/PhD/Lavori/{workdir}/Manoscritti/figures/"
     figname = "dft_" + args.filename[0:-4] + ".png"
     figurepath = savepath + figname
     try:
