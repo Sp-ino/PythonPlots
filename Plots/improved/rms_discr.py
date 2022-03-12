@@ -61,7 +61,7 @@ def main():
     plt.show()
 
     sq = [pow(val,2) for val in yval]
-    rms_val = np.sqrt(sum(sq))/len(yval)
+    rms_val = np.sqrt(sum(sq)/len(yval))
     print(rms_val)
 
 
