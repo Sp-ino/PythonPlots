@@ -53,8 +53,7 @@ def main():
                    type = float,
                    default = 1,
                    help = "data is multiplied by the specified factor.\
-                           Default value is 1"
-                    )
+                           Default value is 1")
     p.add_argument("-s", 
                    "--savethd", 
                    type = bool,
@@ -73,7 +72,7 @@ def main():
 
     #----------------------Generate file paths and import-------------------
     #decide in which path to look for the files (default or user defined)
-    workdir = "ADC_semiasy" 
+    workdir = "ADC_test" 
     if args.userpath is None:
         filepath = f"/home/spino/PhD/Lavori/{workdir}/CSV/" #if userpath is not specified then a default path is used 
     else:
@@ -148,7 +147,8 @@ def main():
     xdata = np.linspace(0.0, 1.0/(Tsample), N+1) #compute x-axis for the DFT
     ydata = 20*np.log10(linydata)               #compute DFT in dB
 
-    if len(sndr_list) >= 2 and args.savethd: 
+    if len(sndr_list) >= 2 and args.savethd:
+        print("saving thd list...")
         outname = "sndr_" + args.filename
         outfile = filepath + outname
         np.savetxt(outfile, sndr_list, delimiter = ",")
@@ -180,7 +180,7 @@ def main():
     fig.tight_layout()
     
     #save and show the result
-    savepath = "/home/spino/PhD/Lavori/{workdir}/Manoscritti/figures/"
+    savepath = f"/home/spino/PhD/Lavori/{workdir}/Manoscritti/figures/"
     figname = "dft_" + args.filename[0:-4] + ".png"
     figurepath = savepath + figname
     try:
