@@ -111,7 +111,10 @@ def main():
     
     fig.show()
     
-    savepath = "/home/spino/PhD/Lavori/ADC_test/Manoscritti/figures/"
+    if args.userpath is None:   
+        savepath = "/home/spino/PhD/Lavori/ADC_test/Manoscritti/figures/"
+    else:
+        savepath = args.userpath[0:-4] + "Manoscritti/figures/"
     figname = args.filename[0:-4] + ".png"
     figurepath = savepath + figname
     

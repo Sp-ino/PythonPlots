@@ -74,10 +74,10 @@ def main():
     #decide in which path to look for the files (default or user defined)
     workdir = "ADC_test" 
     if args.userpath is None:
-        filepath = f"/home/spino/PhD/Lavori/{workdir}/CSV/" #if userpath is not specified then a default path is used 
+        filepath = f"/home/spino/PhD/Lavori/{workdir}/CSV/"
     else:
         filepath = args.userpath
-    
+
     file = filepath + args.filename
 
     try:
@@ -180,7 +180,11 @@ def main():
     fig.tight_layout()
     
     #save and show the result
-    savepath = f"/home/spino/PhD/Lavori/{workdir}/Manoscritti/figures/"
+    if args.userpath is None:
+        savepath = f"/home/spino/PhD/Lavori/{workdir}/CSV/" #if userpath is not specified then a default path is used 
+    else:
+        savepath = args.userpath[0:-4] + "Manoscritti/figures/"
+
     figname = "dft_" + args.filename[0:-4] + ".png"
     figurepath = savepath + figname
     try:
