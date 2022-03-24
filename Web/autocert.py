@@ -10,9 +10,30 @@ from selenium import webdriver as wd
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime as dt
+from argparse import ArgumentParser
 
 
 def main():
+
+    #---------------------------parse arguments------------------------------------
+    p = ArgumentParser(description = "This script compiles the autocertification form for\
+                                    access to Sapienza, SPV building.")
+
+    p.add_argument("-o",
+                    "--offset",
+                    type = int,
+                    default = 0,
+                    help = "Offset (in days) on the date for which the form is compiled,\
+                            computed with respect to the present date."
+                    )
+
+    args = p.parse_args()
+
+    #------------------------------------------------------------------------------
+
+
+    #-------------------------definitions and drivers------------------------------
+    
     #chromedriver_path = "/home/spino/Downloads/chromedriver"   #If one prefers to use chromium/chrome
     #driver = wd.Chrome(chromedriver_path)
     
@@ -31,7 +52,7 @@ def main():
     name = credentials[2]
     surname = credentials[3]
     date = dt.now()
-    day = date.day
+    day = date.day + args.offset
     month = date.month
     year = date.year
     
