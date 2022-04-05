@@ -17,7 +17,7 @@ from datetime import datetime as dt
 from argparse import ArgumentParser
 import os
 import keyring
-import getpass
+from getpass import getpass
 
 
 
@@ -25,9 +25,9 @@ def cred_file_exists():
 
     if os.path.exists(f"{os.path.expanduser('~')}/.sapaccess"):
         
-        with open(f"{os.path.expanduser('~')}.sapaccess", 'r') as reader:
+        with open(f"{os.path.expanduser('~')}/.sapaccess", 'r') as file:
     
-            credentials = reader.readlines()
+            credentials = file.readlines()
         
         if len(credentials) == 3:
         
@@ -46,10 +46,10 @@ def get_creds():
 
     if cred_file_exists():
 
-        with open(f"{os.path.expanduser('~')}.sapaccess", 'r') as reader:
+        with open(f"{os.path.expanduser('~')}/.sapaccess", 'r') as file:
     
-            credentials = reader.readlines()    
-
+            credentials = file.readlines()    
+        
         email = credentials[0]
         name = credentials[1]
         surname = credentials[2]
@@ -60,14 +60,13 @@ def get_creds():
 
         homepath = os.path.expanduser('~')
 
-        credentials = []
         email = input("Insert your email: ")
         name = input("Insert your name: ")
         surname = input("Insert your surname: ")
 
-        with open(f"{homepath}/.sapaccess", 'x') as writer:
+        with open(f"{homepath}/.sapaccess", 'w') as file:
 
-            writer.writelines(credentials)
+            file.writelines([f"{cr}\n" for cr in [email, name, surname]])
 
         return email, name, surname
 
@@ -87,6 +86,15 @@ def get_pw(service, username):
 
 
 
+def set_pw(service, username):
+    
+    new_pw = getpass()
+    keyring.set_password(service, username, new_pw)
+
+    return new_pw
+
+
+
 def main():
 
     #---------------------------parse arguments------------------------------------
@@ -99,6 +107,13 @@ def main():
                     default = 0,
                     help = "Offset (in days) on the date for which the form is compiled,\
                             computed with respect to the present date."
+                    )
+    
+    p.add_argument("-n",
+                    "--newpasswd",
+                    type = bool,
+                    default = False,
+                    help = "Allows to change the password stored in keyring if necessary."
                     )
 
     args = p.parse_args()
@@ -114,8 +129,20 @@ def main():
     
     
     #get info that will be used to fill the form
+    service = "autocert"
     email, name, surname = get_creds()
-    pw = get_pw()
+    email = email[:-1]
+    name = name[:-1]
+    surname = surname[:-1]
+
+    if args.newpasswd:
+
+            pw = set_pw(service, email)
+    
+    else:
+
+        pw = get_pw(service, email)
+        
     date = dt.now()
     day = date.day + args.offset
     month = date.month
