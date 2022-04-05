@@ -4,13 +4,87 @@
 Created on Mon Dec 13 19:14:14 2021
 
 @author: spino
+
+Copyright (c) 2022 Valerio Spinogatti
+Licensed under GNU license
 """
+
 
 from selenium import webdriver as wd
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from datetime import datetime as dt
 from argparse import ArgumentParser
+import os
+import keyring
+import getpass
+
+
+
+def cred_file_exists():
+
+    if os.path.exists(f"{os.path.expanduser('~')}/.sapaccess"):
+        
+        with open(f"{os.path.expanduser('~')}.sapaccess", 'r') as reader:
+    
+            credentials = reader.readlines()
+        
+        if len(credentials) == 3:
+        
+            return True
+        
+        else:
+        
+            return False
+    else:
+        
+        return False
+
+
+
+def get_creds():
+
+    if cred_file_exists():
+
+        with open(f"{os.path.expanduser('~')}.sapaccess", 'r') as reader:
+    
+            credentials = reader.readlines()    
+
+        email = credentials[0]
+        name = credentials[1]
+        surname = credentials[2]
+
+        return email, name, surname
+
+    else: 
+
+        homepath = os.path.expanduser('~')
+
+        credentials = []
+        email = input("Insert your email: ")
+        name = input("Insert your name: ")
+        surname = input("Insert your surname: ")
+
+        with open(f"{homepath}/.sapaccess", 'x') as writer:
+
+            writer.writelines(credentials)
+
+        return email, name, surname
+
+
+
+def get_pw(service, username):
+    
+    pw = keyring.get_password(service, username)
+
+    if pw is None:
+    
+        print("\nNo password has been found in keyring.\n")
+        pw = getpass()
+        keyring.set_password(service, username, pw)
+
+    return pw
+
 
 
 def main():
@@ -28,12 +102,10 @@ def main():
                     )
 
     args = p.parse_args()
-
     #------------------------------------------------------------------------------
 
 
-    #-------------------------definitions and drivers------------------------------
-    
+    #-------------------------definitions and drivers------------------------------    
     #chromedriver_path = "/home/spino/Downloads/chromedriver"   #If one prefers to use chromium/chrome
     #driver = wd.Chrome(chromedriver_path)
     
@@ -41,22 +113,14 @@ def main():
     sapienza_site = 'https://login.uniroma1.it/SSOLoginUniN/ProcessResponseServlet?SAMLRequest=fVLLTsMwELwj8Q%2BW70magASymqACQlTiEdGUAzfH2aSmjjd4nRb%2BnjQFAQd6Hc%2FOY73Ti%2FfWsA040mhTHocTzsAqrLRtUr4sboJzfpEdH01JtqYTs96v7BO89UCeDZOWxPiQ8t5ZgZI0CStbIOGVWMzu70QSTkTn0KNCw9n8OuUSEMuuqqvG1utGrxtZtg0arKrSlJ2Sxq7W%2BFqvOHv%2BjpXsYs2Jephb8tL6AZokcRAnQXxSJImIz8Tp5IWz%2FMvpUtt9g0Oxyj2JxG1R5EH%2BuChGgY2uwD0M7JQ3iI2BUGG7s88lkd4McC0NAWczInB%2BCHiFlvoW3ALcRitYPt2lfOV9RyKKtttt%2BCMTyai32mEr41D7SCri2bhaMbZzv3Z6OLv89ubZj%2Fo0%2BiWVfX3Zrsn8Okej1QebGYPbKwfSDzW864cWN%2Bha6f93i8N4RHQV1CNV9JY6ULrWUHEWZXvXv7cxXMwn&RelayState=https%3A%2F%2Faccounts.google.com%2FCheckCookie%3Fcontinue%3Dhttps%253A%252F%252Fdocs.google.com%252Fforms%252Fd%252Fe%252F1FAIpQLSdAG_KegcP-AIyDqb875yaFw3dd9xn8k65zDTOXsjtIoLTFKQ%252Fviewform%26service%3Dwise%26ltmpl%3Dforms%26ifkv%3DAU9NCcx62hSVxLlkGekIx3XI9KFlvRR4MEQ5TxhlH7-MFhegXG7nWuNx3Myimq31Xy_7uGYM4ckZMQ'
     
     
-    #read credentials from file
-    with open("/home/spino/.sapaccess", 'r') as reader:
-        credentials = reader.readlines()
-    
-    
     #get info that will be used to fill the form
-    email = credentials[0]
-    pw = credentials[1]
-    name = credentials[2]
-    surname = credentials[3]
+    email, name, surname = get_creds()
+    pw = get_pw()
     date = dt.now()
     day = date.day + args.offset
     month = date.month
     year = date.year
-    
-    
+        
     #set variables with xpath
     google_login = '//*[@id="identifierId"]'
     google_continue = '/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button/span'
@@ -77,12 +141,13 @@ def main():
     gform_year = '/html/body/div[1]/div[2]/form/div[2]/div/div[2]/div[5]/div/div/div[2]/div/div/div[5]/div/div[2]/div[1]/div/div[1]/input'
     gform_consent = '/html/body/div[1]/div[2]/form/div[2]/div/div[2]/div[9]/div/div/div[2]/div[1]/div/label/div/div[1]/div[2]'
     gform_enter = '/html/body/div[1]/div[2]/form/div[2]/div/div[3]/div[1]/div[1]/div[2]/span/span'
-    
+
     
     #start driver
-    driver = wd.Firefox()   #start driver
-    
-    
+    driver = wd.Firefox()   #start driver    
+    #------------------------------------------------------------------------------
+
+
     #-------------------------------------Perform actions--------------------------
     #specify google email address
     driver.get(google_site)
