@@ -220,7 +220,6 @@ def main():
                 plt.plot(totransform, "-o")
                 transform = fttp.fft(totransform)
                 linydata[index,:] += 2.0/N * np.abs(transform[:N//2])
-                print("\n\nlinydata: ", linydata, "\n\n")
                 totsquared = 0                                          #compute THD
                 for harm in linydata[index,2:linydata[0,:].size]:
                     totsquared = totsquared + pow(harm,2)
