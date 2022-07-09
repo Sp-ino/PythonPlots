@@ -57,6 +57,14 @@ def main():
                    help = "data is multiplied by the specified factor.\
                            Default value is 1"
                    )
+    p.add_argument("-c",
+                   "--columns",
+                   type = int,
+                   nargs = "+",
+                   default = None,
+                   help = "Indices of the columns to plot from the .csv. \
+                       The count starts from 1 because the first column \
+                       represents the x axis.")
     
     args = p.parse_args() 
     #-----------------------------------------------------------------------
@@ -106,13 +114,28 @@ def main():
         ylab = args.y_label
     else:
         ylab = "y axis"
+
+    num_y_cols = ydata.shape[0]
+    if args.columns is None:
+        col_list = list(range(num_y_cols))
+    else:
+        col_list = args.columns
+        np_col_list = np.array(col_list)
+        if np_col_list[np_col_list > num_y_cols].shape[0] != 0:
+            raise OSError("One (or more) of the indices that have been specified exceeds the range \
+                          of valid indices for the columns of the y data.")
+        
+        col_list = args.columns
     #-----------------------------------------------------------------------
 
 
     #-----------------------Extract vectors, plot and save------------------
     fig, ax = plt.subplots(figsize=(7.5, 4.5))
 
-    for trace in ydata:
+    for ind, trace in enumerate(ydata):
+        if ind+1 not in col_list:
+            continue
+
         ax.plot(xdata[start_index:stop_index], trace[start_index:stop_index])
 
     # #add legend if necessary
