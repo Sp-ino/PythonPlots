@@ -9,7 +9,6 @@ Copyright (c) 2022 Valerio Spinogatti
 Licensed under GNU license
 """
 
-import sys
 import numpy as np
 import matplotlib.pyplot as plt
 from argparse import ArgumentParser
@@ -25,42 +24,51 @@ def main():
     
     #------------------------------Argument parsing-------------------------
     p = ArgumentParser(description = 
-                       "This script allows to plot curves exported from virtuoso as .csv files.")
+                       "This script allows to plot traces imported from .csv files. The .csv file is \
+                        expected to have traces stored as columns, with the first column being the x data. \
+                        The program supports basic on-the-fly processing of the traces: for example, the \
+                        user can choose whether to plot all the points in each trace or just part of them, \
+                        or it can decide to treat the first column of the .csv file as either x data or y \
+                        data.")
     
     p.add_argument("filename", 
                    type = str, 
-                   help = "name of the .csv file"
+                   help = "Name of the .csv file"
                    )
     p.add_argument("-p", 
                    "--userpath", 
                    type = str, 
-                   help = "user specified path"
+                   help = "User specified path"
                    )
     p.add_argument("-x", 
                    "--x_label",
                    type = str, 
-                   help = "x label")
+                   help = "x axis label")
     p.add_argument("-y", 
                    "--y_label", 
                    type = str, 
-                   help = "y label"
+                   help = "y axis label"
                    )
     p.add_argument("-a", 
                    "--start", 
                    type = int, 
-                   help = "starting index from which to plot"
+                   help = "Starting index from which to plot"
                    )
     p.add_argument("-o", 
                    "--stop", 
                    type = int, 
-                   help = "index of the last element to be plotted"
+                   help = "Index of the last element to be plotted"
                    )
     p.add_argument("-m",
-                   "--multiplier",
+                   "--multipliers",
                    type = float,
-                   default = 1,
-                   help = "data is multiplied by the specified factor.\
-                           Default value is 1"
+                   nargs = "+",
+                   default = None,
+                   help = "y data is multiplied by the specified factors.\
+                           Default value is 1 for all columns. The number \
+                           of multipliers that are passed to the program \
+                           must coincide with the number of y data columns \
+                           in the .csv file."
                    )
     p.add_argument("-c",
                    "--columns",
@@ -69,7 +77,7 @@ def main():
                    default = None,
                    help = "Indices of the columns to plot as y data from the .csv. \
                         The count should start from 1 if the first column of the .csv \
-                        represents the x axis. If a 0 is specified as argument, the program \
+                        represents the x axis. If a 0 is passed as argument, the program \
                         will assume that column 0 of the .csv  also represents y data \
                         and the selected columns will be plotted against the number of \
                         samples."
@@ -90,19 +98,13 @@ def main():
     try:
         data = np.genfromtxt(file, delimiter = ",", dtype = np.double)
     except FileNotFoundError as e:
-        print("Error: ", e)
-        sys.exit(1) 
+        raise OSError(e)
 
-    if args.multiplier is not None:
-        mul = args.multiplier
-    else:
-        mul = 1
+    # Remove header
+    _, data = data[0], data[1:]
 
-    if data.shape[1] == 1:
-        raise Warning("The .csv file that has been")
-    data_rows = data.transpose()
-    xdata = data_rows[0, 1:]
-    ydata = mul * data_rows[1:, 1:]
+    # Extract number of columns
+    num_data_cols = data.shape[1]
     #-----------------------------------------------------------------------
 
     #----------------------Save arguments into variables--------------------
@@ -114,7 +116,7 @@ def main():
     if args.stop is not None:
         stop_index = args.stop + 1
     else:
-        stop_index = xdata.size
+        stop_index = data.shape[0]
 
     if args.x_label is not None:
         xlab = args.x_label
@@ -126,33 +128,51 @@ def main():
     else:
         ylab = "y axis"
 
-    num_y_cols = ydata.shape[0]
-    if args.columns is None:
+    num_y_cols = num_data_cols - 1
+    if args.columns is None:    # if -c option is not specified, plot columns 1: against column 0
         col_list = list(range(1,num_y_cols+1))
-    else:
+    else:                       # otherwise plot only the specified ones
         col_list = args.columns
-        np_col_list = np.array(col_list)
-        if np_col_list[np_col_list > num_y_cols].shape[0] != 0:
-            raise OSError("One (or more) of the indices that have been specified exceeds the range \
-                          of valid indices for the columns of the y data.")
+        if 0 in col_list:       # if 0 is in col_list then column 0 is interpreted as y data
+            num_y_cols = num_data_cols
         
-        col_list = args.columns
-    #-----------------------------------------------------------------------
+    if num_data_cols == 1 and 0 not in col_list:
+        raise Warning("Option -c: the .csv file that has been imported has just one column of data. \
+                    If you want to plot it rerun the script with the option --columns 0 \
+                    or -c 0.")
 
+    np_col_list = np.array(col_list)
+    if np.any(np_col_list[np_col_list > num_y_cols]) or np.any(np_col_list[np_col_list < 0]):
+        raise OSError("Option -c: one (or more) of the specified indices is invalid.")
+    
+    if args.multipliers is not None:
+        if len(args.multipliers) != num_y_cols:
+            raise OSError("Option -m: the number of multipliers that are specified must coincide with \
+                           the number of y traces.")
+        multipliers = args.multipliers
+    else:
+        multipliers = [1]*num_y_cols
+    #-----------------------------------------------------------------------
 
     #-----------------------Extract vectors, plot and save------------------
     fig, ax = plt.subplots(figsize=(7.5, 4.5))
+
+    # Transpose data matrix to make things easier with for loops
+    data_rows = data.transpose()
 
     if 0 in col_list:
         for ind, trace in enumerate(data_rows):
             if ind not in col_list:
                 continue
-            ax.plot(trace[start_index:stop_index])
+            y = multipliers[ind]*trace[start_index:stop_index]
+            ax.plot(y)
     else:
-        for ind, trace in enumerate(ydata):
+        x = data_rows[0, start_index:stop_index]
+        for ind, trace in enumerate(data_rows[1:]):
             if ind+1 not in col_list:
                 continue
-            ax.plot(xdata[start_index:stop_index], trace[start_index:stop_index])
+            y = multipliers[ind]*trace[start_index:stop_index]
+            ax.plot(x, y)
 
     # #add legend if necessary
     # ax.legend(loc = "lower right")
