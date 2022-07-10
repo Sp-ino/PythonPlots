@@ -26,6 +26,7 @@ def main():
     p = ArgumentParser(description = 
                        "This script allows to plot traces imported from .csv files. The .csv file is \
                         expected to have traces stored as columns, with the first column being the x data. \
+                        The first row is expected to contain the header of the .csv with the column names.\
                         The program supports basic on-the-fly processing of the traces: for example, the \
                         user can choose whether to plot all the points in each trace or just part of them, \
                         or it can decide to treat the first column of the .csv file as either x data or y \
@@ -59,17 +60,14 @@ def main():
                    type = int, 
                    help = "Index of the last element to be plotted"
                    )
-    p.add_argument("-m",
-                   "--multipliers",
-                   type = float,
-                   nargs = "+",
-                   default = None,
-                   help = "y data is multiplied by the specified factors.\
-                           Default value is 1 for all columns. The number \
-                           of multipliers that are passed to the program \
-                           must coincide with the number of y data columns \
-                           in the .csv file."
-                   )
+    p.add_argument("-l",
+                    "--legend",
+                    type = str,
+                    nargs = "+",
+                    default = None,
+                    help = "Names to be used in the legend. If there are more names \
+                            than the number of traces the extra ones are ignored."
+                    )
     p.add_argument("-c",
                    "--columns",
                    type = int,
@@ -80,7 +78,20 @@ def main():
                         represents the x axis. If a 0 is passed as argument, the program \
                         will assume that column 0 of the .csv  also represents y data \
                         and the selected columns will be plotted against the number of \
-                        samples."
+                        samples. If an index is specified more than once the extra \
+                        occurrences are ignored."
+                   )
+    p.add_argument("-m",
+                   "--multipliers",
+                   type = float,
+                   nargs = "+",
+                   default = None,
+                   help = "y data is multiplied by the specified factors.\
+                           Default value is 1 for all columns. The number \
+                           of multipliers that are passed to the program \
+                           must coincide with the number of y data columns \
+                           that are going to be plotted (this takes into account \
+                           the -c option)."
                    )
 
     args = p.parse_args() 
@@ -96,18 +107,19 @@ def main():
     file = filepath + args.filename
 
     try:
-        data = np.genfromtxt(file, delimiter = ",", dtype = np.double)
+        data = np.genfromtxt(file, delimiter=",", dtype=np.double, skip_header=1)
     except FileNotFoundError as e:
         raise OSError(e)
 
     # Remove header
-    _, data = data[0], data[1:]
+    # _, data = data[0], data[1:]
 
     # Extract number of columns
     num_data_cols = data.shape[1]
     #-----------------------------------------------------------------------
 
     #----------------------Save arguments into variables--------------------
+    # Manage start and stop arguments
     if args.start is not None:  
         start_index = args.start
     else:
@@ -118,6 +130,7 @@ def main():
     else:
         stop_index = data.shape[0]
 
+    # Manage labels
     if args.x_label is not None:
         xlab = args.x_label
     else:
@@ -128,60 +141,58 @@ def main():
     else:
         ylab = "y axis"
 
-    num_y_cols = num_data_cols - 1
-    if args.columns is None:    # if -c option is not specified, plot columns 1: against column 0
-        col_list = list(range(1,num_y_cols+1))
+    # Manage legend names
+    if args.legend is not None:
+        legend_names = args.legend
+
+    # Manage --columns argument, that defines which columns of the .csv are plotted
+    if args.columns is None:    # if -c option is not specified, plot all columns against column 0
+        col_indices = np.arange(1, num_data_cols)
     else:                       # otherwise plot only the specified ones
-        col_list = args.columns
-        if 0 in col_list:       # if 0 is in col_list then column 0 is interpreted as y data
-            num_y_cols = num_data_cols
-        
-    if num_data_cols == 1 and 0 not in col_list:
+        col_indices = np.unique(args.columns)
+
+    num_y_cols = col_indices.shape[0] 
+
+    if num_data_cols == 1 and 0 not in col_indices:
         raise Warning("Option -c: the .csv file that has been imported has just one column of data. \
                     If you want to plot it rerun the script with the option --columns 0 \
                     or -c 0.")
 
-    np_col_list = np.array(col_list)
-    if np.any(np_col_list[np_col_list > num_y_cols]) or np.any(np_col_list[np_col_list < 0]):
+    if np.any(col_indices[col_indices > num_data_cols]) or np.any(col_indices[col_indices < 0]):
         raise OSError("Option -c: one (or more) of the specified indices is invalid.")
     
+    # Manage scaling factor for each trace
     if args.multipliers is not None:
         if len(args.multipliers) != num_y_cols:
             raise OSError("Option -m: the number of multipliers that are specified must coincide with \
-                           the number of y traces.")
-        multipliers = args.multipliers
+                           the number of traces to be plotted.")
+        multipliers = np.expand_dims(np.array(args.multipliers), 0)
     else:
-        multipliers = [1]*num_y_cols
+        multipliers = np.ones((1, num_y_cols))
     #-----------------------------------------------------------------------
 
     #-----------------------Extract vectors, plot and save------------------
     fig, ax = plt.subplots(figsize=(7.5, 4.5))
 
-    # Transpose data matrix to make things easier with for loops
-    data_rows = data.transpose()
+    y = multipliers * data[:, col_indices]
 
-    if 0 in col_list:
-        for ind, trace in enumerate(data_rows):
-            if ind not in col_list:
-                continue
-            y = multipliers[ind]*trace[start_index:stop_index]
-            ax.plot(y)
+    if 0 not in col_indices:
+        x = data[:, 0]
+        ax.plot(x, y)
     else:
-        x = data_rows[0, start_index:stop_index]
-        for ind, trace in enumerate(data_rows[1:]):
-            if ind+1 not in col_list:
-                continue
-            y = multipliers[ind]*trace[start_index:stop_index]
-            ax.plot(x, y)
+        ax.plot(y)
 
     # #add legend if necessary
-    # ax.legend(loc = "lower right")
+    ax.legend(legend_names, loc = "lower right")
     
     ax.set_xlabel(xlab) #add x label
     ax.set_ylabel(ylab) #add y label
 
     #clean whitespace padding
     fig.tight_layout()
+
+    # Show figure
+    fig.show()
     
     #save and show the result
     savepath = "/home/spino/PhD/Lavori/ADC_test/Manoscritti/figures/"
