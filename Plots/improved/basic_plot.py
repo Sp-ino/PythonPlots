@@ -128,7 +128,7 @@ def main():
 
     num_y_cols = ydata.shape[0]
     if args.columns is None:
-        col_list = list(range(num_y_cols))
+        col_list = list(range(1,num_y_cols+1))
     else:
         col_list = args.columns
         np_col_list = np.array(col_list)
