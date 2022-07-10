@@ -29,11 +29,13 @@ def main():
     
     p.add_argument("filename", 
                    type = str, 
-                   help = "name of the .csv file")
+                   help = "name of the .csv file"
+                   )
     p.add_argument("-p", 
                    "--userpath", 
                    type = str, 
-                   help = "user specified path")
+                   help = "user specified path"
+                   )
     p.add_argument("-x", 
                    "--x_label",
                    type = str, 
@@ -41,15 +43,18 @@ def main():
     p.add_argument("-y", 
                    "--y_label", 
                    type = str, 
-                   help = "y label")
+                   help = "y label"
+                   )
     p.add_argument("-a", 
                    "--start", 
                    type = int, 
-                   help = "starting index from which to plot")
+                   help = "starting index from which to plot"
+                   )
     p.add_argument("-o", 
                    "--stop", 
                    type = int, 
-                   help = "index of the last element to be plotted")
+                   help = "index of the last element to be plotted"
+                   )
     p.add_argument("-m",
                    "--multiplier",
                    type = float,
@@ -62,10 +67,14 @@ def main():
                    type = int,
                    nargs = "+",
                    default = None,
-                   help = "Indices of the columns to plot from the .csv. \
-                       The count starts from 1 because the first column \
-                       represents the x axis.")
-    
+                   help = "Indices of the columns to plot as y data from the .csv. \
+                        The count should start from 1 if the first column of the .csv \
+                        represents the x axis. If a 0 is specified as argument, the program \
+                        will assume that column 0 of the .csv  also represents y data \
+                        and the selected columns will be plotted against the number of \
+                        samples."
+                   )
+
     args = p.parse_args() 
     #-----------------------------------------------------------------------
 
@@ -89,6 +98,8 @@ def main():
     else:
         mul = 1
 
+    if data.shape[1] == 1:
+        raise Warning("The .csv file that has been")
     data_rows = data.transpose()
     xdata = data_rows[0, 1:]
     ydata = mul * data_rows[1:, 1:]
@@ -132,11 +143,16 @@ def main():
     #-----------------------Extract vectors, plot and save------------------
     fig, ax = plt.subplots(figsize=(7.5, 4.5))
 
-    for ind, trace in enumerate(ydata):
-        if ind+1 not in col_list:
-            continue
-
-        ax.plot(xdata[start_index:stop_index], trace[start_index:stop_index])
+    if 0 in col_list:
+        for ind, trace in enumerate(data_rows):
+            if ind not in col_list:
+                continue
+            ax.plot(trace[start_index:stop_index])
+    else:
+        for ind, trace in enumerate(ydata):
+            if ind+1 not in col_list:
+                continue
+            ax.plot(xdata[start_index:stop_index], trace[start_index:stop_index])
 
     # #add legend if necessary
     # ax.legend(loc = "lower right")
