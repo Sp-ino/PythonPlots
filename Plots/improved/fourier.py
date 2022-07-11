@@ -27,7 +27,10 @@ def main():
     
     #------------------------------Argument parsing-------------------------
     p = ArgumentParser(description = 
-                       "This script allows to plot curves exported from virtuoso as .csv files.")
+                       "This script performs some Fourier analysis on traces imported from \
+                        a .csv file. In particular, it computes the FFT of every column \
+                        (except the one with index 0) and optionally saves THD values \
+                        to an output .csv file.")
     
     p.add_argument("filename", 
                    type = str, 

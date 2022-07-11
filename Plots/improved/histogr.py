@@ -26,7 +26,7 @@ def main():
     
     #------------------------------Argument parsing--------------------------------
     p = ArgumentParser(description = 
-                       "This script allows to make histogram plot starting from .csv with one column.")
+                       "This script makes a histogram plot from a .csv file with one column.")
     
     p.add_argument("filename", 
                    type = str, 

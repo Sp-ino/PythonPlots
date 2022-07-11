@@ -66,7 +66,7 @@ def main():
                     nargs = "+",
                     default = None,
                     help = "Names to be used in the legend. If there are more names \
-                            than the number of traces the extra ones are ignored."
+                            than the number of traces, the extra ones are ignored."
                     )
     p.add_argument("-c",
                    "--columns",
@@ -171,19 +171,20 @@ def main():
         multipliers = np.ones((1, num_y_cols))
     #-----------------------------------------------------------------------
 
-    #-----------------------Extract vectors, plot and save------------------
+    #-----------------------Extract traces, plot and save-------------------
     fig, ax = plt.subplots(figsize=(7.5, 4.5))
 
-    y = multipliers * data[:, col_indices]
+    y = multipliers * data[start_index:stop_index, col_indices]
 
     if 0 not in col_indices:
-        x = data[:, 0]
+        x = data[start_index:stop_index, 0]
         ax.plot(x, y)
     else:
         ax.plot(y)
 
     # #add legend if necessary
-    ax.legend(legend_names, loc = "lower right")
+    if args.legend is not None:
+        ax.legend(legend_names, loc = "lower right")
     
     ax.set_xlabel(xlab) #add x label
     ax.set_ylabel(ylab) #add y label
