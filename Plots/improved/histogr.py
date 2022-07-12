@@ -108,9 +108,8 @@ def main():
     ax.hist(data)
     ax.text(0.05, 0.95, textstr, transform = ax.transAxes, fontsize = 14,
             verticalalignment = 'top', bbox = props)
-    
-    fig.show()
-    
+
+    # Save figure
     if args.userpath is None:   
         savepath = "/home/spino/PhD/Lavori/ADC_test/Manoscritti/figures/"
     else:
@@ -122,6 +121,9 @@ def main():
         fig.savefig(figurepath, dpi = 600)
     except:
         print("Couldn't save figure to specified path. Check savepath and make sure it exists.")
+
+    # Show figure before exiting
+    plt.show(block=True)    
     #-----------------------------------------------------------------------
     
 

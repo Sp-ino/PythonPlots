@@ -100,7 +100,7 @@ def main():
     #----------------------Generate file paths and import-------------------
     #decide in which path to look for the files (default or user defined)
     if args.userpath is None:
-        filepath = "/home/spino/PhD/Lavori/ADC_test/CSV/" #if userpath is not specified then a default path is used 
+        filepath = "/home/spino/PhD/Lavori/sar_adc_testchip/CSV/" #if userpath is not specified then a default path is used 
     else:
         filepath = args.userpath
     
@@ -155,8 +155,11 @@ def main():
 
     if num_data_cols == 1 and 0 not in col_indices:
         raise Warning("Option -c: the .csv file that has been imported has just one column of data. \
-                    If you want to plot it rerun the script with the option --columns 0 \
-                    or -c 0.")
+If you want to plot it rerun the script with the option --columns 0 or -c 0.")
+    
+    if (0 not in col_indices and num_y_cols > num_data_cols-1) or (0 in col_indices and num_y_cols > num_data_cols):
+        raise OSError("Option -c: The number of selcted columns must be less or equal than the number \
+of columns in the .csv file.")
 
     if np.any(col_indices[col_indices > num_data_cols]) or np.any(col_indices[col_indices < 0]):
         raise OSError("Option -c: one (or more) of the specified indices is invalid.")
@@ -165,7 +168,7 @@ def main():
     if args.multipliers is not None:
         if len(args.multipliers) != num_y_cols:
             raise OSError("Option -m: the number of multipliers that are specified must coincide with \
-                           the number of traces to be plotted.")
+the number of traces to be plotted.")
         multipliers = np.expand_dims(np.array(args.multipliers), 0)
     else:
         multipliers = np.ones((1, num_y_cols))
@@ -192,17 +195,20 @@ def main():
     #clean whitespace padding
     fig.tight_layout()
 
-    # Show figure
-    fig.show()
-    
     #save and show the result
-    savepath = "/home/spino/PhD/Lavori/ADC_test/Manoscritti/figures/"
+    savepath = "/home/spino/PhD/Lavori/sar_adc_testchip/Manoscritti/figures/"
     figname = args.filename[0:-4] + ".png"
     figurepath = savepath + figname
     try:
         fig.savefig(figurepath, dpi = 600)
+        # Add log that tells the figure has been saved (and were it has been saved)
     except:
+        # Replace with log
         print("Couldn't save figure to specified path. Check savepath and make sure it exists.")
+
+    # Show figure before exiting
+    # Add log that warns user to close the figure
+    plt.show(block=True) 
     #-----------------------------------------------------------------------
     
     

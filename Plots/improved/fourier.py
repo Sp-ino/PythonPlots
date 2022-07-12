@@ -194,6 +194,9 @@ def main():
         fig.savefig(figurepath, dpi = 600)
     except:
         print("Couldn't save figure to specified path. Check savepath and make sure it exists.")
+
+    # Show figure before exiting
+    plt.show(block=True)    
     #-----------------------------------------------------------------------
     
     
