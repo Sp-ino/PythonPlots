@@ -18,6 +18,13 @@ from argparse import ArgumentParser
 
 
 
+def prettyprint_harms(xdata, ydata):
+    print(f"\n\tFrequency:\t\t    Power:\n")
+    for freq, power in zip(xdata, ydata):
+        print(f"\t{freq:10.2f}\t\t{power:10.2f}")
+
+
+
 def main():
     plt.rcParams.update({
         "text.usetex": True,
@@ -119,7 +126,7 @@ def main():
 
 
     #-----------------------------------------------------------------------
-    Tsample = 5e-9
+    Tsample =12*416e-12
     N = 32                                                          #N should be a power of 2
     sndr_list = []
     n_traces = ydata.shape[0]
@@ -133,14 +140,14 @@ def main():
     linydata = np.zeros((n_traces, N))
 
     for index, curve in enumerate(ydata):
-        totransform = curve[first_sample:N+first_sample] - 1            #compute DFT
+        totransform = curve[first_sample:N+first_sample]            #compute DFT
         plt.plot(totransform, "-o")
         transform = fft(totransform)
         linydata[index,:] += 2.0/N * np.abs(transform[:N])
 
         totsquared = sum(np.power(linydata[index, 2:N//2], 2))
-        thdlin = np.sqrt(totsquared)/linydata[index, fundam_index]
-        thd = 20*np.log10(thdlin)   
+        thdlin = totsquared/(linydata[index, fundam_index]**2)
+        thd = 10*np.log10(thdlin)   
         sndr_list.append(-thd)
         print("SNDR =", -thd)
 
@@ -149,6 +156,7 @@ def main():
     
     xdata = np.linspace(0.0, 1.0/(Tsample), N+1) #compute x-axis for the DFT
     ydata = 20*np.log10(linydata)               #compute DFT in dB
+    prettyprint_harms(xdata, ydata[0])
 
     if len(sndr_list) >= 2 and args.savethd:
         print("saving thd list...")
